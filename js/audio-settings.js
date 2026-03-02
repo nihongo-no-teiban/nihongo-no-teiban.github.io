@@ -1,7 +1,9 @@
-function clearItem(){
+function clearItems(){
     window.localStorage.removeItem("AUDIO")
     window.localStorage.removeItem("AUDIO-INTRO")
 }
+
+
 
 if(window.localStorage.getItem("AUDIO") == null || window.localStorage.getItem("AUDIO-INTRO") == null){
     window.localStorage.setItem("AUDIO", "1")
@@ -54,5 +56,6 @@ function toggleIntro(){
         }
         console.log("intro = " + window.localStorage.getItem("AUDIO-INTRO"))
     })
-
 }
+
+

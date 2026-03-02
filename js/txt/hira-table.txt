@@ -1,0 +1,145 @@
+<table>
+    <tr>
+        <th class="ja-text">あ{a}</th>
+        <th class="ja-text">か{ka}</th>
+        <th class="ja-text">さ{sa}</th>
+        <th class="ja-text">た{ta}</th>
+        <th class="ja-text">な{na}</th>
+        <th class="ja-text">は{ha}</th>
+        <th class="ja-text">ま{ma}</th>
+        <th class="ja-text">や{ya}</th>
+        <th class="ja-text">ら{ra}</th>
+        <th class="ja-text">わ{wa}</th>
+        <th class="ja-text">ぱ{pa}</th>
+        <th class="ja-text">ば{ba}</th>
+        <th class="ja-text">だ{da}</th>
+        <th class="ja-text">ざ{za}</th>
+        <th class="ja-text">が{ga}</th>
+    </tr>
+    <tr>
+        <th class="ja-text">い{i}</th>
+        <th class="ja-text">き{ki}</th>
+        <th class="ja-text">し{shi}</th>
+        <th class="ja-text">ち{chi}</th>
+        <th class="ja-text">に{ni}</th>
+        <th class="ja-text">ひ{hi}</th>
+        <th class="ja-text">み{mi}</th>
+        <th></th>
+        <th class="ja-text">り{ri}</th>
+        <th></th>
+        <th class="ja-text">ぴ{pi}</th>
+        <th class="ja-text">び{bi}</th>
+        <th class="ja-text">ぢ{di}</th>
+        <th class="ja-text">じ{ji}</th>
+        <th class="ja-text">ぎ{gi}</th>
+    </tr>
+    <tr>
+        <th class="ja-text">う{u}</th>
+        <th class="ja-text">く{ku}</th>
+        <th class="ja-text">す{su}</th>
+        <th class="ja-text">つ{tsu}</th>
+        <th class="ja-text">ぬ{nu}</th>
+        <th class="ja-text">ふ{fu}</th>
+        <th class="ja-text">む{mu}</th>
+        <th class="ja-text">ゆ{yu}</th>
+        <th class="ja-text">る{ru}</th>
+        <th></th>
+        <th class="ja-text">ぷ{pu}</th>
+        <th class="ja-text">ぶ{bu}</th>
+        <th class="ja-text">づ{dzu}</th>
+        <th class="ja-text">ず{zu}</th>
+        <th class="ja-text">ぐ{gu}</th>
+    </tr>
+    <tr>
+        <th class="ja-text">え{e}</th>
+        <th class="ja-text">け{ke}</th>
+        <th class="ja-text">せ{se}</th>
+        <th class="ja-text">て{te}</th>
+        <th class="ja-text">ね{ne}</th>
+        <th class="ja-text">へ{he}</th>
+        <th class="ja-text">め{me}</th>
+        <th></th>
+        <th class="ja-text">れ{re}</th>
+        <th></th>
+        <th class="ja-text">ぺ{pe}</th>
+        <th class="ja-text">べ{be}</th>
+        <th class="ja-text">で{de}</th>
+        <th class="ja-text">ぜ{ze}</th>
+        <th class="ja-text">げ{ge}</th>
+    </tr>
+    <tr>
+        <th class="ja-text">お{o}</th>
+        <th class="ja-text">こ{ko}</th>
+        <th class="ja-text">そ{so}</th>
+        <th class="ja-text">と{to}</th>
+        <th class="ja-text">の{no}</th>
+        <th class="ja-text">ほ{ho}</th>
+        <th class="ja-text">も{mo}</th>
+        <th class="ja-text">よ{yo}</th>
+        <th class="ja-text">ろ{ro}</th>
+        <th class="ja-text">を{wo}</th>
+        <th class="ja-text">ぽ{po}</th>
+        <th class="ja-text">ぼ{bo}</th>
+        <th class="ja-text">ど{do}</th>
+        <th class="ja-text">ぞ{zo}</th>
+        <th class="ja-text">ご{go}</th>
+    </tr>
+    <tr>
+        <th class="ja-text">ん{n}</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th class="ja-text">きゃ{kya}</th>
+        <th class="ja-text">しゃ{sha}</th>
+        <th class="ja-text">ちゃ{cha}</th>
+        <th class="ja-text">にゃ{nya}</th>
+        <th class="ja-text">ひゃ{hya}</th>
+        <th class="ja-text">みゃ{mya}</th>
+        <th class="ja-text">りゃ{rya}</th>
+        <th class="ja-text">ぴゃ{pya}</th>
+        <th class="ja-text">びゃ{bya}</th>
+        <th class="ja-text">じゃ{ja}</th>
+        <th class="ja-text">ぎゃ{gya}</th>
+    </tr>
+    <tr>
+        <th class="ja-text">きゅ{kyu}</th>
+        <th class="ja-text">しゅ{shu}</th>
+        <th class="ja-text">ちゅ{chu}</th>
+        <th class="ja-text">にゅ{nyu}</th>
+        <th class="ja-text">ひゅ{hyu}</th>
+        <th class="ja-text">みゅ{myu}</th>
+        <th class="ja-text">りゅ{ryu}</th>
+        <th class="ja-text">ぴゅ{pyu}</th>
+        <th class="ja-text">びゅ{byu}</th>
+        <th class="ja-text">じゅ{ju}</th>
+        <th class="ja-text">ぎゅ{gyu}</th>
+    </tr>
+    <tr>
+        <th class="ja-text">きょ{kyo}</th>
+        <th class="ja-text">しょ{sho}</th>
+        <th class="ja-text">ちょ{cho}</th>
+        <th class="ja-text">にょ{nyo}</th>
+        <th class="ja-text">ひょ{hyo}</th>
+        <th class="ja-text">みょ{myo}</th>
+        <th class="ja-text">りょ{ryo}</th>
+        <th class="ja-text">ぴょ{pyo}</th>
+        <th class="ja-text">びょ{byo}</th>
+        <th class="ja-text">じょ{jo}</th>
+        <th class="ja-text">ぎょ{gyo}</th>
+    </tr>
+</table>

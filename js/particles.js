@@ -1,5 +1,5 @@
 // padding ajustments for ヴ
-waitForElem("#group-231-screen").then(function(elem){
+waitForElem("#group-234-screen").then(function(elem){
     elem.style.paddingLeft = "25px"
     elem.style.paddingRight = "25px"
 })
@@ -24,7 +24,7 @@ async function setParticles() {
         main.appendChild(particleArea)
         for(var k=0;k<text.length;k++){
             var textBox = document.createElement("p")
-            textBox.innerText = text[k]
+            textBox.innerHTML = text[k]
             main.appendChild(textBox)
         }
         containers[container].appendChild(main)
