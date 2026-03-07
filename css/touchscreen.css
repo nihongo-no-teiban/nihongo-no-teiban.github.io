@@ -2,10 +2,12 @@
     html{
         zoom:25%;
     }
+
     body{
-        background-image:url("../background/konbiniMobile.png"), linear-gradient(var(--PRIMARY) 0 100%);
-        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
     }
+
     #side-menu-button{
         font-size: 100pt;
         padding: 25px;
@@ -58,8 +60,66 @@
         padding-left: 5px;
     }
 
+    #opening-screen{
+        height: calc(100vh * 4);
+    }
+
+    #main-heading{
+        font-size: 30vw;
+        width: max-content;
+    }
+
+    #main-heading .ja-popup{
+        top: -10vw;
+        font-size: 15vw;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0) ;
+        border:none;
+        transition: all;
+    }
+
+    #main-heading .ja-screen:hover{
+        color: var(--PRIMARY);
+        background-color: rgba(0, 0, 0, 0) ;
+        --text-shadow-value: 1vw;
+        text-shadow: 
+            var(--text-shadow-value) 0 var(--SECONDARY),
+            calc(var(--text-shadow-value) * -1) 0 var(--SECONDARY),
+            0 var(--text-shadow-value) var(--SECONDARY),
+            0 calc(var(--text-shadow-value) * -1) var(--SECONDARY),
+
+            var(--text-shadow-value) var(--text-shadow-value) var(--SECONDARY),
+            calc(var(--text-shadow-value) * -1) calc(var(--text-shadow-value) * -1) var(--SECONDARY),
+            var(--text-shadow-value) calc(var(--text-shadow-value) * -1) var(--SECONDARY),
+            calc(var(--text-shadow-value) * -1) var(--text-shadow-value) var(--SECONDARY);
+    }
+
+    #main-subheading{
+        font-size: 12vw;
+        font-weight: 500;
+        width: max-content;
+    }
+
+    .main-info, #main-arrow{
+        font-size: 9vw;
+        width: max-content;
+        max-width: calc(75vw*4);
+        letter-spacing: -0.15vw;
+    }
+    .main-info{
+        padding-top: 20vw;
+    }
+
+    #main-arrow{
+        font-size: 12vw;
+        top:2vw;
+    }
+    @keyframes arrow-down{
+        0%{top:2vw;}
+        100%{top:8vw;}
+    }
+
     .center{
-        margin-top: calc(22vw + 200px);
         margin-bottom: calc(22vw + 1800px);
     }
 
@@ -164,10 +224,7 @@
     .hiragana, .katakana{
         margin-bottom: 80px;
     }
-
-    h1{
-        font-size: 70pt;
-    }
+    
     #intro-text-title{
         font-size: 45pt;
         padding-top: 30px;

@@ -5,8 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bread & Butter</title>
     <link rel="icon" type="image/x-icon" href="icons/icon192.png">
 
@@ -22,7 +21,7 @@
     <script src="js/side-menu/side-menu.js"></script>
     <script src="js/japanese/japanese.js"></script>
     <script src="js/japanese/tts.js"></script>
-    <script src="js/webpage/pwa.js"></script>
+    <script src="js/webpage/device.js"></script>
     <script type="module" src="js/quiz/hiragana-quiz.js"></script>
     <script type="module" src="js/quiz/katakana-quiz.js"></script>
 
@@ -37,31 +36,17 @@
         <!-- Injected -->
     </div>
 </div>
+<div id="opening-screen">
+    <div id="opening-center">
+        <h1 id="main-heading"><span class="ja-text">日本語の定番チートシート{にほんご・の・ていばん・チートシート}</span></h1>
+        <p id="main-subheading">Ｔｈｅ　Ｊａｐａｎｅｓｅ　Ｇｏ－Ｔｏ　Ｃｈｅａｔ　Ｓｈｅｅｔ</p>
+        <p class="main-info" id="computer-zoom">Ｍａｋｅ　ｓｕｒｅ　ｔｏ　ｕｓｅ　<span class="control-key">ＣＴＲＬ</span>＋　ａｎｄ　<span class="control-key">ＣＴＲＬ</span>－　ｔｏ　ａｄｊｕｓｔ　ｃｏｎｅｎｔ　ｓｉｚｅ，
+            <br>（Ｎｏｔｅ：　ｔｏ　ｇｅｔ　ｔｈｅ　ｂｅｓｔ　ａｄｊｕｓｔｍｅｎｔｓ，　ｚｏｏｍ　ｏｕｔ　ｕｎｔｉｌ　ｔｈｅｒｅ　ｉｓ　ｎｏ　ｓｉｄｅｗａｙｓ　ｓｃｒｏｌｌ，ｔｈｅｎ　ａｄｊｕｓｔ　ｔｈｅ　ｚｏｏｍ　ｆｒｏｍ　ｔｈａｔ　ｐｏｉｎｔ　ｔｏ　ｙｏｕｒ　ｌｉｋｉｎｇ）</p>
+        <p class="main-info">Ｓｃｒｏｌｌ　ｄｏｗｎ　ｏｒ　ｕｓｅ　ｔｈｅ　ｓｉｄｅ　ｍｅｎｕ　<span style="letter-spacing: 0px;">（☰）</span>ｔｏ　ｊｕｍｐ　ｔｏ　ａ　ｔｏｐｉｃ</p>
+        <p id="main-arrow">▼</p>
+    </div>
+</div>
 <div class="center">
-    <h1><span class="ja-text">日本語{にほんご}</span>（ＪＡＰＡＮＥＳＥ）</h1>
-    <h3 id="intro-text-title"><span class="ja-text">よろしく{yoroshiku}</span> (^０^)ノ</h3>
-    <h4 id="intro-text">
-        Ｎｉｃｅ　ｔｏ　ｍｅｅｔ　ｙｏｕ　ａｎｄ　Ｗｅｌｃｏｍｅ　ｔｏ　Ｊａｐａｎｅｓｅ　Ｂｒｅａｄ　＆　Ｂｕｔｔｅｒ<div class="space"></div>
-        Ａ　ｓｉｍｐｌｙ　ａｎｄ　ｅａｓｙ　ｃｈｅａｔ　ｓｈｅｅｔ　ｆｏｒ　ｌｅａｒｎｉｎｇ　Ｊａｐａｎｅｓｅ　
-        ｔｈａｔ　ｐｒｏｖｉｄｅｓ　ｙｏｕ　ｗｉｔｈ　ａｌｌ　ｔｈｅ　ｅｓｓｅｎｔｉａｌｓ　ｙｏｕ’ｌｌ　ｎｅｅｄ<div class="space"></div>
-        Ｓｏ　ｅａｓｙ　ａｎｄ　ｈｅｌｐｆｕｌ　ｙｏｕ　ｃｏｕｌｄ　ｃａｌｌ　ｉｔ　ｙｏｕｒ　「Ｂｒｅａｄ　＆　Ｂｕｔｔｅｒ」<div class="space"></div>
-        （Ｙｅｓ　Ｉ　ｍａｄｅ　ｔｈａｔ　ｕｐ　ｍｙｓｅｌｆ　⁭<span class="kaomoji">(¬ᴗ¬) -✧</span>）
-        <p id="pwa-text">
-            <br>
-            Ａｌｓｏ，　ｔｏ　Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｉｎｓｔａｌｌｉｎｇ　Ｊａｐａｎｅｓｅ　Ｂｒｅａｄ　＆　Ｂｕｔｔｅｒ，　ｗｅ　ａｄｄｅｄ　ａ　ｎｅｗ　
-            <span class="ja-text inline-ja">コンビニ{konbini}</span>
-            　ｓｏｕｎｄ　ｅｆｆｅｃｔ　ｆｏｒ　ｗｈｅｎ　ｙｏｕ　ｏｐｅｎ　ｔｈｅ　ａｐｐ，　
-            <span class="ja-text inline-ja">ありがとうございます{arigatou gozaimasu}</span>
-            　
-            <span class="kaomoji">ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</span><br><br>
-            Ｎｏｔｅ：　ｙｏｕ　ｔｏｇｇｌｅ　ｔｈｅ　
-            <span class="ja-text inline-ja">コンビニ{konbini}</span>
-            　ｓｏｕｎｄ　ｅｆｆｅｃｔ　ｏｎ／ｏｆｆ　ｉｎ　ｔｈｅ　ｓｉｄｅ　ｍｅｎｕ（
-            Ｄｏｎ’ｔ　ｗｏｒｒｙ，　Ｉ　ｗｏｎ’ｔ　ｔａｋｅ　ｉｔ　ｔｏ　ｈｅａｒｔ
-            <span class="kaomoji">（´-ω-`）</span>
-            ）
-        </p>
-    </h4>
     <h2 id="kana-title"><span class="ja-text">仮名{がな}</span>（ＷＲＩＴＩＮＧ　ＳＹＳＴＥＭ）</h2>
     <h3 id="hiragana-title"><span class="ja-text">平仮名{ひらがな}</span>（ＨＩＲＡＧＡＮＡ）<button class="quiz-button" id="hiragana-quiz"></button></h3>
     <div id="hiragana-contents">

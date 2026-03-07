@@ -1,21 +1,3 @@
-function adjustZoom(){
-    var devicePixelRatio = window.devicePixelRatio || 1
-    var zoom =  100 + (100 - Math.round(devicePixelRatio* 100))  + "%"
-    waitForElem("#side-menu-button").then(function(button){
-        button.style.zoom = zoom
-    })
-    waitForElem("#side-menu").then(function(menu){
-        menu.style.zoom = zoom
-    })
-}
-
-if(window.matchMedia("(pointer: coarse)").matches == false) {
-    adjustZoom()
-    window.addEventListener("resize",function(){
-        adjustZoom()
-    })
-}
-
 function scrollById(event,Name){
     var menuA = event.srcElement.getBoundingClientRect()
     var elem = document.getElementById(Name)
@@ -75,7 +57,6 @@ document.addEventListener("click",function(event){
 })
 
 var list = [
-    ["","toggleIntro()", "-function intro-audio"],
     ["","toggleAudio()", "-function audio-button"],
     ["","toggleColors(event)", "-function dark-mode"],
     ["","", 0],

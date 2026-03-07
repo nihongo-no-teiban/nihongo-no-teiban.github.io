@@ -5,8 +5,9 @@ function clearColors(){
 }
 
 // light, dark
-const COLORS = ["#C6C8C5","#131953"]
-if(window.localStorage.getItem("PRIMARY") == null || window.localStorage.getItem("SECONDARY") == null){
+const COLORS = ["#EEEEEE","#BC002D"]
+if(window.localStorage.getItem("PRIMARY") == null || window.localStorage.getItem("SECONDARY") == null || 
+COLORS.includes(window.localStorage.getItem("PRIMARY")) == false || COLORS.includes(window.localStorage.getItem("SECONDARY")) == false){
     window.localStorage.setItem("PRIMARY", COLORS[0])
     window.localStorage.setItem("SECONDARY", COLORS[1])
 }
