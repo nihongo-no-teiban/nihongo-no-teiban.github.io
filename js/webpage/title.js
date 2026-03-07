@@ -1,10 +1,10 @@
 var activeFrames = [
-    "(^０^)ノ",
-    "(^０^)／"
+    "　(^０^)ノ",
+    "　(^０^)／"
 ]
 var inactiveFrames = [
-    "(－-－) zZ",
-    "(－o－) Zz"
+    "　(－-－) zZ",
+    "　(－o－) Zz"
 ]
 
 
