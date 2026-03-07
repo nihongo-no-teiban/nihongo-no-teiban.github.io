@@ -20,7 +20,7 @@ setInterval(function(){
             counter += 1
         }
     } else {
-        speed = 600
+        speed = 1000
         document.title = inactiveFrames[counter]
         if(counter > inactiveFrames.length - 2){
             counter = 0
