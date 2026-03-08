@@ -66,7 +66,7 @@ var list = [
     ["","toggleColors(event)", "-function dark-mode"],
     ["","", 0],
     ["日本語の定番チートシート","window.scrollTo(0,0)", 1],
-    ["仮名（ＷＲＩＴＩＮＧ　ＳＹＳＴＥＭ）","scrollById(event,'kana-title')", 1],
+    ["仮名（ＫＡＮＡ）","scrollById(event,'kana-title')", 1],
     ["平仮名（ＨＩＲＡＧＡＮＡ）","scrollById(event,'hiragana-title')", 2],
     ["片仮名（ＫＡＴＡＫＡＮＡ）","scrollById(event,'katakana-title')", 2],
     ["漢字（ＫＡＮＪＩ）","scrollById(event,'kanji-title')", 1],

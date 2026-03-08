@@ -72,26 +72,10 @@
     #main-heading .ja-popup{
         top: -10vw;
         font-size: 15vw;
-        padding: 0;
-        background-color: rgba(0, 0, 0, 0) ;
-        border:none;
-        transition: all;
     }
 
     #main-heading .ja-screen:hover{
-        color: var(--PRIMARY);
-        background-color: rgba(0, 0, 0, 0) ;
         --text-shadow-value: 1vw;
-        text-shadow: 
-            var(--text-shadow-value) 0 var(--SECONDARY),
-            calc(var(--text-shadow-value) * -1) 0 var(--SECONDARY),
-            0 var(--text-shadow-value) var(--SECONDARY),
-            0 calc(var(--text-shadow-value) * -1) var(--SECONDARY),
-
-            var(--text-shadow-value) var(--text-shadow-value) var(--SECONDARY),
-            calc(var(--text-shadow-value) * -1) calc(var(--text-shadow-value) * -1) var(--SECONDARY),
-            var(--text-shadow-value) calc(var(--text-shadow-value) * -1) var(--SECONDARY),
-            calc(var(--text-shadow-value) * -1) var(--text-shadow-value) var(--SECONDARY);
     }
 
     #main-subheading{
@@ -101,13 +85,13 @@
     }
 
     .main-info, #main-arrow{
-        font-size: 9vw;
+        font-size: 8.5vw;
         width: max-content;
         max-width: calc(75vw*4);
         letter-spacing: -0.15vw;
     }
     .main-info{
-        padding-top: 20vw;
+        padding-top: 5vw;
     }
 
     #main-arrow{

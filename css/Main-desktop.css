@@ -79,20 +79,13 @@ JA-TEXT SETTINGS/OPTIONS
     letter-spacing: 0px;
 }
 .inline-ja .ja-screen{
-    --padding: 3px;
-    --left-right: 6px;
-    padding: var(--padding);
-    margin: calc(var(--padding)*-1);
-    padding-left: var(--left-right);
-    padding-right: var(--left-right);
-    margin-left: calc(var(--left-right)*-1);
-    margin-right: calc(var(--left-right)*-1);
+    padding: 4px;
+    margin: -4px;
 }
 .inline-ja .ja-popup{
-    top:-26px;
+    top:-32px;
     font-size: 12pt;
-    padding-top:6px;
-    padding-bottom: 6px;
+    padding: 6px;
     font-weight: 600;
 }
 
@@ -626,7 +619,7 @@ Particle Titles
     padding-bottom: 0px;
 }
 .descriptor{
-    font-size: 15pt;
+    font-size: 16pt;
     font-family: "ＭＳ Ｐゴシック";
     color: var(--SECONDARY);
     margin-block-start: 0;
@@ -634,8 +627,8 @@ Particle Titles
     margin-top: 5px;
     margin-bottom: 18px;
     margin-left: 5px;
-    width: 900px;
-    padding: 7px;
+    width: 1100px;
+    padding: 10px;
     background-color: var(--PRIMARYalpha);
     border: 1px var(--SECONDARY) solid;
 }
