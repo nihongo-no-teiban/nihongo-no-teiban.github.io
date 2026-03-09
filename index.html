@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,16 +20,17 @@
     <script src="js/side-menu/audio-settings.js"></script>
     <script src="js/webpage/colors.js"></script>
     <script src="js/webpage/loading.js"></script>
-    <script src="js/side-menu/side-menu.js"></script>
     <script src="js/japanese/japanese.js"></script>
     <script src="js/japanese/tts.js"></script>
     <script src="js/webpage/device.js"></script>
     <script src="js/webpage/orientation.js"></script>
+    <script src="js/webpage/install.js"></script>
+    <script src="js/side-menu/side-menu.js"></script>
     <script type="module" src="js/quiz/hiragana-quiz.js"></script>
     <script type="module" src="js/quiz/katakana-quiz.js"></script>
-
 </head>
 <body>
+<div id="background"></div>
 <div id="loading-cover"></div>
 <div id="menu-button-area">
     <button id="side-menu-button">☰</button>
@@ -66,10 +64,11 @@
         is written out in Rōmaji as "ma" as that is a representation of 
         what the character sounds like using Latin characters. When looking over
         the Rōmaji, you may begin to notice Japanese's unique lingustic structure
-        of Consonant then Vowel (e.g. ka, sa, ta, na, etc), you may also notice that
+        of Consonant then Vowel (e.g. ka, sa, ta, na, etc).<br><br>you may also notice, that
         in the word "Rōmaji" the o has an accent on it (ō), this is to show that there is
-        a long vowel sound, in Japanese this is called <span class="ja-text inline-ja">長音{ちょうおん}</span>.
-        Words with long vowels are different to those without
+        a long vowel sound,
+        in Japanese this is called <span class="ja-text inline-ja">長音{ちょうおん}</span>.
+        Words with long vowels are different to those without,
         as <span class="ja-text inline-ja">高校{こうこう}</span> means high school
         whereas <span class="ja-text inline-ja">ここ{koko}</span> means here.
         In Hiragana, the vowel sound can be extended by adding either an 
@@ -80,8 +79,8 @@
         In Katakana these long vowels are 
         indicated by "ー", for example in the word <span class="ja-text inline-ja">ラーメン{rāmen}</span>
         <br><br>
-        Hiragana are a simple cursive version of kanji characters with
-        46 basic characters, 
+        Hiragana is a character set made up of a simple cursive version of
+        ancient kanji characters with a total of 46 basic characters, 
         it was developed during the Heian Era (794-1185 AD) and initially
         known as <span class="ja-text inline-ja">女手{おんなで}</span> meaning "women's hand" as it was primarily used by
         women during this time who were excluded from learning kanji,
@@ -92,25 +91,25 @@
         and with words that are native to Japan such as <span class="ja-text inline-ja">こんにちは{konnichiwa}</span>.
         <br><br>
         Katakana is a character set made up of straight, angular lines each
-        of which 46 basic characters (the same as hiragana), Katakana
+        of which total 46 basic characters (the same as hiragana), Katakana
         was developed during the Heian Era (794-1185 AD) as a phonetic guide
         for Buddhist monks and scholars, and was develop from the radicals 
         (indervidual symbols found within a kanji character) within 
         <span class="ja-text inline-ja">万葉仮名{まんようがな}</span>
         (ancient Chinese characters used in Japan), which is where Katakana gets it's name 
         as it translated to "fragmentary kana" as it is created from 
-        fragments of kanji characters, in modern Japanese Katakana
-        represents Foreign Loanwords (also known as 
+        fragments of kanji characters. <br><br>
+        In modern Japanese, Katakana represents Foreign Loanwords (also known as 
         <span class="ja-text inline-ja">外来語{がいらいご}</span>), such as 
         <span class="ja-text inline-ja">ビーチ{bīchi}</span> which means beach and 
-        <span class="ja-text inline-ja">ホテル{hoteru}</span> which means hotel, 
-        it's good to note taht even though these sound like English, not all
-        loanwords do,
-        Some can be shortened like in <span class="ja-text inline-ja">コンビニ{konbini}</span>
+        <span class="ja-text inline-ja">ホテル{hoteru}</span> which means hotel.
+        Its good to note that even though these sound similar to English, not all
+        loanwords do, some can be shortened like in 
+        <span class="ja-text inline-ja">コンビニ{konbini}</span>
         which means convenience store and some may not even be english such as 
         <span class="ja-text inline-ja">パン{pan}</span> which comes from the 
         Portuguese word "pão" for bread, Katakana is also used in Onomatopoeia such
-        as「<span class="ja-text inline-ja">ニャー{nyā}</span>」(Cat's meow) or
+        as「<span class="ja-text inline-ja">ニャー{nyā}</span>」which is a cat's meow or
         「<span class="ja-text inline-ja">ドキドキ{dokidoki}</span>」 
         which is the sound of a heartbeat, as well as many other uses like
         for technical or scientific terms.<br><br>
@@ -159,9 +158,15 @@
         <span class="ja-text inline-ja">フ{fu}</span> and 
         <span class="ja-text inline-ja">エ{e}</span> makes 
         <span class="ja-text inline-ja">フェ{fe}</span>, there are also
-        diagraphs such as and kana such as  which aren't used in modern Japanese,
+        diagraphs such as <span class="ja-text inline-ja">くゎ{kwa}</span> or 
+        <span class="ja-text inline-ja">くゐ{kwi}</span> in hiragana and kana
+        in general like <span class="ja-text inline-ja">ゐ{wi}</span>/
+        <span class="ja-text inline-ja">ヰ{wi}</span> and 
+        <span class="ja-text inline-ja">ゑ{we}</span>/
+        <span class="ja-text inline-ja">ヱ{we}</span>
+        which aren't used in modern Japanese,
         if you are intrested to learn more you can search up about the history of 
-        Japanese diagraphs
+        Japanese
 
         <br><br>
         The tables of Hiragana and Katakana below are also in 

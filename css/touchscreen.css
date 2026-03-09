@@ -7,8 +7,12 @@
         zoom:25%;
     }
 
-    body{
-        background-size:cover;
+    #background{
+        height: calc(100lvh * 4);
+        width: calc(100lvw * 4);
+        background-attachment:scroll;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }
 

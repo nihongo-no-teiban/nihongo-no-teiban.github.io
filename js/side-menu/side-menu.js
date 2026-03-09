@@ -61,6 +61,7 @@ function openForm() {
 }
 
 var list = [
+    ["インストール（ＩＮＳＴＡＬＬ）","installApp()", "-function install-button"],
     ["ご意見用紙（ＦＥＥＤＢＡＣＫ　ＦＯＲＭ）","openForm()", "-function"],
     ["","toggleAudio()", "-function audio-button"],
     ["","toggleColors(event)", "-function dark-mode"],

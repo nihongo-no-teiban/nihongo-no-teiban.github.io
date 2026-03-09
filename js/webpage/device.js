@@ -38,11 +38,5 @@ setInterval(function(){
         }
     })
 
-    waitForElem("#opening-screen").then(function(screen){
-        if(window.matchMedia("(pointer: coarse)").matches){
-
-
-        }
-    })
 },1)
 

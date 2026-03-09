@@ -1,5 +1,3 @@
-console.log("test")
-
 var katakanaContent
 katakanaContent = await fetch("../js/json/katakana.json")
 .then(responce => responce.json())

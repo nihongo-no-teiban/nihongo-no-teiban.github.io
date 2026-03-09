@@ -16,6 +16,15 @@ body{
     user-select: none;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--PRIMARY);
+    margin:0;
+}
+
+#background{
+    position: fixed;
+    height: 100lvh;
+    width: 100lvw;
+    z-index: -100;
+    background-color: var(--PRIMARY);
     background-image:url("../background/bng.jpeg") ;
     background-blend-mode: if(
         style(--PRIMARY: #BC002D): color-burn;
@@ -25,8 +34,6 @@ body{
     background-repeat: repeat;
     background-position: center;
     background-size:contain;
-    margin:0;
-    
 }
 
 /*
@@ -634,7 +641,7 @@ Particle Titles
     width: 1100px;
     padding: 10px;
     background-color: var(--PRIMARYalpha);
-    border: 1px var(--SECONDARY) solid;
+    border: 6px var(--SECONDARY) double ;
 }
 
 /*//////////////////////////////////////////////////////////
