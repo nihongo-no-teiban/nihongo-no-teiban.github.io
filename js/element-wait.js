@@ -24,9 +24,9 @@ function waitForElem(name){
 function waitForElemAll(name, num){
     return new Promise(resolve => {
         const check = () => {
-            const elements = document.getElementsByClassName(name);
+            const elements = document.querySelectorAll(name);
             if (elements.length >= num) {
-                observer.disconnect();
+                try{observer.disconnect()}catch{}
                 resolve(elements);
                 return true;
             }

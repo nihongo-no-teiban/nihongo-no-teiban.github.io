@@ -60,24 +60,46 @@ function openForm() {
     window.open("https://rune-spatula-bbb.notion.site/ebd//31cf990f08338050bd3bd481851d9d32", '_blank').focus();
 }
 
-var list = [
-    ["インストール（ＩＮＳＴＡＬＬ）","installApp()", "-function install-button"],
-    ["ご意見用紙（ＦＥＥＤＢＡＣＫ　ＦＯＲＭ）","openForm()", "-function"],
-    ["","toggleAudio()", "-function audio-button"],
-    ["","toggleColors(event)", "-function dark-mode"],
-    ["","", 0],
-    ["日本語の定番チートシート","window.scrollTo(0,0)", 1],
-    ["仮名（ＫＡＮＡ）","scrollById(event,'kana-title')", 1],
-    ["平仮名（ＨＩＲＡＧＡＮＡ）","scrollById(event,'hiragana-title')", 2],
-    ["片仮名（ＫＡＴＡＫＡＮＡ）","scrollById(event,'katakana-title')", 2],
-    ["長音と促音（ＬＯＮＧ　ＶＯＷＥＬＳ\nＡＮＤ　ＤＯＵＢＬＥ　ＣＯＮＳＴＡＮＴＳ）","scrollById(event,'vowel-const-title')", 2],
-    ["漢字（ＫＡＮＪＩ）","scrollById(event,'kanji-title')", 1],
-    ["単語（ＶＯＣＡＢＵＬＡＲＹ）","scrollById(event,'vocab-title')", 1],
-    ["文法（ＧＲＡＭＭＡＲ）","scrollById(event,'grammar-title')", 1],
-    ["助詞（ＰＡＲＴＩＣＬＥＳ）","scrollById(event,'particle-title')", 2],
-    ["数詞（ＣＯＵＮＴＥＲＳ）","scrollById(event,'counter-title')", 1]
+async function createList(){
+    var list = [
+        ["インストール（ＩＮＳＴＡＬＬ）","installApp()", "-function install-button"],
+        ["ご意見用紙（ＦＥＥＤＢＡＣＫ　ＦＯＲＭ）","openForm()", "-function"],
+        ["","toggleAudio()", "-function audio-button"],
+        ["","toggleColors(event)", "-function dark-mode"],
+        ["","", 0],
+        ["日本語の定番チートシート","window.scrollTo(0,0)", 1]
+    ]
+    var alltitles = await waitForElem("#counter-title").then(response => response)
+    var firstHeading = await waitForElem("#kana-title").then(response => response)
+    var titleList = []
+    var currentElem = firstHeading
+    var maxTitles = 100
+    console.log(currentElem.tagName)
+    for(i=0;i<maxTitles;i++){
+        try {
+            if(currentElem.tagName == "H2" || currentElem.tagName == "H3"|| currentElem.tagName == "H4"){
+                titleList.push(currentElem)
+                currentElem = currentElem.nextElementSibling
+            } else {
+                currentElem = currentElem.nextElementSibling
+            }
+        } catch{
+            break
+        }
+    }
+    for(i=0;i<titleList.length;i++){
+        if(titleList[i].tagName == "H2") {
+            list.push([titleList[i].innerText,"scrollById(event,'"+titleList[i].id+"')",1])
+        } else if(titleList[i].tagName == "H3"){
+            list.push([titleList[i].innerText,"scrollById(event,'"+titleList[i].id+"')",2])
+        } else {
+            list.push([titleList[i].innerText,"scrollById(event,'"+titleList[i].id+"')",3])
+        }
+    }
+    return list
+}
 
-]
+
 //
 
 function addContents(array){
@@ -91,4 +113,7 @@ function addContents(array){
         }
     })
 }
-addContents(list)
+var sideMenuList = createList().then(response => 
+    addContents(response)
+)
+

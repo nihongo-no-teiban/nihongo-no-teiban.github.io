@@ -17,6 +17,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--PRIMARY);
     margin:0;
+    padding-bottom: 75vh;
 }
 
 #background{
@@ -120,8 +121,11 @@ table .ja-screen{
     border-radius: 2px;
     white-space: nowrap;
 }
+
 table .ja-screen.singleKana{
-    aspect-ratio: 1/1;
+    margin-left: -3px;
+    padding-left: 26px;
+    padding-right: 26px;
 }
 table .ja-screen.doubleKana, .ja-screen.moreParticle{
     padding-left: 18px;
@@ -145,6 +149,13 @@ h2 .ja-popup{
 h3 .ja-popup{
     top: -34px;
     font-size: 18pt;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h4 .ja-popup{
+    top: -30px;
+    font-size: 15pt;
     padding: 8px;
     padding-left: 10px;
     padding-right: 10px;
@@ -246,7 +257,7 @@ Side Menu Contents/Text
     color: var(--SECONDARY);
     position: relative;
     pointer-events: all;
-    padding-bottom: calc(5vw + 600px);
+    padding-bottom: 50vh;
 }
 .menu-option{
     position: relative;
@@ -298,6 +309,11 @@ Side Menu Contents/Text
     font-size: 1em;
     padding-right:30px;
     font-weight: 400;
+}
+.type3{
+    font-size: 0.8em;
+    padding-right:30px;
+    font-weight: 300;
 }
 
 /*
@@ -433,23 +449,14 @@ MAIN PAGE AREA
 ############################################################
 */
 
-.center{
-    width: max-content;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: calc(5vw + 600px);
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-}
-
 /*//////////////////////////////////////////////////////////
-Headings 2 & 3
+Headings 2 3 4
 //////////////////////////////////////////////////////////*/
 
 h2{
     position: relative;
+    left:50%;
+    translate: -50%;
     font-size: 35pt;
     font-weight: 400;
     color: var(--SECONDARY);
@@ -457,11 +464,13 @@ h2{
     margin-block-end: 0;
     padding-top:10px;
     padding-bottom: 10px;
-    width: 1150px;
     word-break: keep-all;
+    text-align: center;
 }
 h3{
     position: relative;
+    left:50%;
+    translate: -50%;
     font-size: 25pt;
     font-weight: 300;
     color: var(--SECONDARY);
@@ -469,8 +478,23 @@ h3{
     margin-block-end: 0;
     padding-top:10px;
     padding-bottom: 0px;
-    width: 1150px;
     word-break: keep-all;
+    text-align: center;
+}
+
+h4{
+    position: relative;
+    left:50%;
+    translate: -50%;
+    font-size: 22pt;
+    font-weight: 200;
+    color: var(--SECONDARY);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top:10px;
+    padding-bottom: 0px;
+    word-break: keep-all;
+    text-align: center;
 }
 
 /*//////////////////////////////////////////////////////////
@@ -480,11 +504,14 @@ Table Elements
 table {
     border-collapse: separate;
     margin-bottom: 50px;
+    position: relative;
+    left:50%;
+    translate: -50%;
+    border-spacing: 5px;
 }
 td, th {
     font-size: 20pt;
     text-align: center;
-    width: 1fr;
 }
 th:not(:empty){
     border: 1px var(--SECONDARY) solid ;
@@ -493,21 +520,49 @@ th:not(:empty){
     background-color: var(--PRIMARYalpha);
 }
 
+th.table-title{
+    
+    border: 0px rgba(0, 0, 0, 0) solid ;
+    color: var(--SECONDARY);
+    background-color: rgba(0, 0, 0, 0);
+}
+.ja-table-title{
+    font-size: 28pt !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+.ja-table-title:hover{
+    border: 0px rgba(0, 0, 0, 0) solid ;
+    color: var(--PRIMARY);
+    background-color: rgba(0, 0, 0, 0);
+     --text-shadow-value: 2px;
+    text-shadow: var(--text-shadow-value) 0 var(--SECONDARY), calc(var(--text-shadow-value) * -1) 0 var(--SECONDARY), 0 var(--text-shadow-value) var(--SECONDARY), 0 calc(var(--text-shadow-value) * -1) var(--SECONDARY),
+               var(--text-shadow-value) var(--text-shadow-value) var(--SECONDARY), calc(var(--text-shadow-value) * -1) calc(var(--text-shadow-value) * -1) var(--SECONDARY), var(--text-shadow-value) calc(var(--text-shadow-value) * -1) var(--SECONDARY), calc(var(--text-shadow-value) * -1) var(--text-shadow-value) var(--SECONDARY);
+}
+
+.ja-table-title > .ja-popup{
+    top: -28px;
+    text-shadow: none;
+}
+
+
 /*//////////////////////////////////////////////////////////
 Hiragana and Katakana
 //////////////////////////////////////////////////////////*/
 
 .quiz-button{
     position: relative;
+    left: 50%;
+    translate: -50%;
     font-size: 20pt;
     top:6px;
     right:6px;
     padding: 2px;
+    margin-bottom:15px;
     border: 1px var(--SECONDARY) solid ;
     border-radius: 2px;
     color: var(--SECONDARY);
     background-color: var(--PRIMARYalpha);
-    float: right;
 }
 .quiz-button:hover{
     color: var(--PRIMARY);
@@ -529,12 +584,16 @@ Hiragana and Katakana
 }
 .quiz-container{
     position: relative;
-    height: 660px;
-    width: 99%;
+    left:50%;
+    translate: -50%;
+    height: 500px;
+    width: 80%;
+    max-width: 1200px;
     background-color: var(--PRIMARYalpha);
     border: 1px var(--SECONDARY) solid;
     border-radius: 2px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .quiz-question-counter{
     margin-block-start: 0;
@@ -651,20 +710,28 @@ Particle Titles
     margin-block-end: 0;
     margin-top: 5px;
     margin-bottom: 18px;
-    margin-left: 5px;
-    width: 1100px;
+    width: 90%;
+    max-width: 1500px;
     padding: 10px;
     background-color: var(--PRIMARYalpha);
     border: 6px var(--SECONDARY) double ;
+    word-break: keep-all;
+    position: relative;
+    left:50%;
+    translate: -50%;
 }
 
 /*//////////////////////////////////////////////////////////
 Particle Contents
 //////////////////////////////////////////////////////////*/
 
-#particle-container{
+#grid-container{
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(3, 375px);
+    grid-template-columns: repeat(3, 33%);
     column-gap: 10px;
     row-gap: 10px;
     margin-bottom: 20px;
@@ -684,6 +751,7 @@ main{
 main table{
     position: relative;
     margin: 0;
+    border-spacing:0;
 }
 main td:not(:empty), main th:not(:empty){
     background-color: rgba(0, 0, 0, 0) ;

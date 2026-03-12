@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>日本語・の・定番・チートシート</title>
+    <title></title>
 
     <link id="icon48" rel="icon" type="image/x-icon" href="icons/icon48.ico">
     <link id="icon32" rel="icon" type="image/x-icon" href="icons/icon32.ico">
@@ -25,8 +25,9 @@
     <script src="js/webpage/orientation.js"></script>
     <script src="js/webpage/install.js"></script>
     <script src="js/side-menu/side-menu.js"></script>
-    <script type="module" src="js/quiz/hiragana-quiz.js"></script>
-    <script type="module" src="js/quiz/katakana-quiz.js"></script>
+    <!-- <script type="module" src="js/quiz/hiragana-quiz.js"></script>
+    <script type="module" src="js/quiz/katakana-quiz.js"></script> -->
+    <script type="module" src="js/quiz/quiz.js"></script>
 </head>
 <body>
 <div id="background"></div>
@@ -41,7 +42,7 @@
 </div>
 <div id="opening-screen">
     <div id="opening-center">
-        <h1 id="main-heading"><span class="ja-text">日本語の定番チートシート{にほんご・の・ていばん・チートシート}</span></h1>
+        <h1 id="main-heading"><span class="ja-text">日本語の定番チートシート{にほんご / の / ていばん / チートシート}</span></h1>
         <p id="main-subheading">Ｔｈｅ　Ｊａｐａｎｅｓｅ　Ｇｏ－Ｔｏ　Ｃｈｅａｔ　Ｓｈｅｅｔ</p>
         <p class="main-info" id="computer-zoom1">Ｍａｋｅ　ｓｕｒｅ　ｔｏ　ｕｓｅ　<span class="control-key">ＣＴＲＬ</span>＋　ａｎｄ　<span class="control-key">ＣＴＲＬ</span>－　ｔｏ　ａｄｊｕｓｔ　ｃｏｎｅｎｔ　ｓｉｚｅ</p>
         <p class="main-info" id="computer-zoom2"><span style="letter-spacing: 0px;">（</span>Ｎｏｔｅ：　ｔｏ　ｇｅｔ　ｔｈｅ　ｂｅｓｔ　ａｄｊｕｓｔｍｅｎｔｓ，　ｚｏｏｍ　ｏｕｔ　ｕｎｔｉｌ　ｔｈｅｒｅ　ｉｓ　ｎｏ　ｓｉｄｅｗａｙｓ　ｓｃｒｏｌｌ，
@@ -50,266 +51,185 @@
         <p id="main-arrow">▼</p>
     </div>
 </div>
-<div class="center">
     <h2 id="kana-title"><span class="ja-text">仮名{かな}</span>（ＫＡＮＡ）</h2>
+    <h3 id="kana-what-title"><span class="ja-text">仮名とは何ですか？{かなとはなんですか？}</span>（ＷＨＡＴ　ＡＲＥ　ＫＡＮＡ？）</h3>
     <p class="descriptor">
-        Kana refers to the symbols/character that make up the 
-        Japanese language, these mostly refer to Hiragana and 
-        Katakana.<br><br>
-        Firstly however, a good concept to learn before Hiragana and Katakana
-        is about Rōmaji. Rōmaji is about using the Latin alphabet (English
-        characters) to spell/sound out Japanese characters, for example the 
-        Japanese symbol <span class="ja-text inline-ja">ま{ma}</span> 
-        is written out in Rōmaji as "ma" as that is a representation of 
-        what the character sounds like using Latin characters. When looking over
-        the Rōmaji, you may also notice Japanese's unique lingustic structure
-        of Consonant then Vowel (e.g. ka, sa, ta, na, etc) which is the structure that
-        all words and sounds in Japanese work.
+        <span class="ja-text inline-ja">仮名{かな}</span>
+        refers to the phonetic symbols that make up indervidual sounds found in Japanese，of which there a 2 types of
+        <span class="ja-text inline-ja">仮名{かな}</span> called 
+        <span class="ja-text inline-ja">平仮名{ひらがな}</span> and 
+        <span class="ja-text inline-ja">片仮名{かたかな}</span>．both types of
+        <span class="ja-text inline-ja">仮名{かな}</span> have 46 basic symbols which are usaually presented in a table called 
+        <span class="ja-text inline-ja">五十音{ごじゅうおん}</span> which means "50 sounds" in Japanese (note that historically there were a total of 50 however some are not used in modern Japanese)．This table is then split into 5 collums
+        (<span class="ja-text inline-ja">段{だん}</span>) and 10 rows
+        (<span class="ja-text inline-ja">行{ぎょう}</span>)，the collums represent the 5 vowel: a，i，u，e，and o and the 10 rows represent the constanent (apart from the first row which is just the vowels)， that are in Japanese: k，s，t，n，h，m，y，r，and w
+    </p>
+    <h3 id="romaji-title"><span class="ja-text">ローマ字{ローマじ}</span>（ＲＯＭＡＪＩ）</h3>
+    <p class="descriptor">
+        A good concept to learn before 
+        <span class="ja-text inline-ja">平仮名{ひらがな}</span> and 
+        <span class="ja-text inline-ja">片仮名{かたかな}</span>
+        is about <span class="ja-text inline-ja">ローマ字{ローマじ}</span>． 
+        Rōmaji (as it is spelt out using <span class="ja-text inline-ja">ローマ字{ローマじ}</span>)
+        is about using the Latin alphabet (English
+        characters) to spell/sound out Japanese <span class="ja-text inline-ja">仮名{かな}</span> 
+        ，for example the 
+        Japanese 
+        <span class="ja-text inline-ja">仮名{かな}</span>，<span class="ja-text inline-ja">ま{ma}</span>，
+        is written out in <span class="ja-text inline-ja">ローマ字{ローマじ}</span>
+        as "ma" as that is a representation of 
+        what the character sounds like using Latin characters (in English)．
+        <span class="ja-text inline-ja">ローマ字{ローマじ}</span> is a great tool
+        to help understand pronounciation as it allows English speakers to be able to pronounce
+        Japanese <span class="ja-text inline-ja">仮名{かな}</span> easily，it is also good to note that in 
+        <span class="ja-text inline-ja">ローマ字{ローマじ}</span> long vowels are indicated
+        by a line above the vowel called a "macron"，e.g． ā，ī，ū，ē，ō (to find out more about long vowels
+        you can look at the long vowels section later in the page)
         <br><br>
-        Hiragana is a character set made up of a simple cursive version of
-        ancient kanji characters with a total of 46 basic characters, 
+        Although <span class="ja-text inline-ja">ローマ字{ローマじ}</span> is a great
+        tool for learning the basics, most of this webpage will not use it (a part from
+        the basics like <span class="ja-text inline-ja">平仮名{ひらがな}</span>，
+        <span class="ja-text inline-ja">片仮名{かたかな}</span> and grammer elements) in order
+        to help you recognise concepts like
+        <span class="ja-text inline-ja">漢字{かんじ}</span> and grammer patterns found 
+        in Japanese
+    </p>
+    <h3 id="hiragana-title"><span class="ja-text">平仮名{ひらがな}</span>（ＨＩＲＡＧＡＮＡ）</h3>
+    <p class="descriptor">
+        <span class="ja-text inline-ja">平仮名{ひらがな}</span> 
+        is a character set made up of a simple cursive version of
+        ancient kanji characters with a total of 46 basic characters，
         it was developed during the Heian Era (794-1185 AD) and initially
         known as <span class="ja-text inline-ja">女手{おんなで}</span> meaning "women's hand" as it was primarily used by
-        women during this time who were excluded from learning kanji,
+        women during this time who were excluded from learning kanji，
         over time Hiragana started to integrate into the japanese language
-        and today now plays a vital part in the language, such as being
-        used in furigana (a helping aid for spelling out kanji, also a feature
-        of this app), gramatical elements such as particles and verb endings, 
-        and with words that are native to Japan such as <span class="ja-text inline-ja">こんにちは{konnichiwa}</span>.
-        <br><br>
-        Katakana is a character set made up of straight, angular lines each
-        of which total 46 basic characters (the same as hiragana), Katakana
-        was developed during the Heian Era (794-1185 AD) as a phonetic guide
-        for Buddhist monks and scholars, and was develop from the radicals 
-        (indervidual symbols found within a kanji character) within 
-        <span class="ja-text inline-ja">万葉仮名{まんようがな}</span>
-        (ancient Chinese characters used in Japan), which is where Katakana gets it's name 
-        as it translated to "fragmentary kana" as it is created from 
-        fragments of kanji characters. <br><br>
-        In modern Japanese, Katakana represents Foreign Loanwords (also known as 
-        <span class="ja-text inline-ja">外来語{がいらいご}</span>), such as 
-        <span class="ja-text inline-ja">ビーチ{bīchi}</span> which means beach and 
-        <span class="ja-text inline-ja">ホテル{hoteru}</span> which means hotel.
-        Its good to note that even though these sound similar to English, not all
-        loanwords do, some can be shortened like in 
-        <span class="ja-text inline-ja">コンビニ{konbini}</span>
-        which means convenience store and some may not even be english such as 
-        <span class="ja-text inline-ja">パン{pan}</span> which comes from the 
-        Portuguese word "pão" for bread, Katakana is also used in Onomatopoeia such
-        as「<span class="ja-text inline-ja">ニャー{nyā}</span>」which is a cat's meow or
-        「<span class="ja-text inline-ja">ドキドキ{dokidoki}</span>」 
-        which is the sound of a heartbeat, as well as many other uses like
-        for technical or scientific terms.<br><br>
-        Beyond the basic 46 characters, Hiragana and Katakana can have diagraphs 
-        (a pair of characters which creates a single distinct sound) and 
-        diacritics (a glyph/shape added to a character to change it's sound).<br><br>
-        the diagraphs used in modern Japanese are called 
-        <span class="ja-text inline-ja">拗音{ようおん}</span>, 
-        and in modern japanese they normally take a kana ending with i (e.g.
-        <span class="ja-text inline-ja">き{ki}</span>, 
-        <span class="ja-text inline-ja">し{shi}</span>, 
-        <span class="ja-text inline-ja">ち{chi}</span>, 
-        <span class="ja-text inline-ja">に{ni}</span>, 
-        etc)
-        and add either <span class="ja-text inline-ja">や{ya}</span>,
-        <span class="ja-text inline-ja">ゆ{yu}</span>, 
-        or 
-        <span class="ja-text inline-ja">よ{yo}</span>
-         to combind the 2 sounds together, for
-        example, the word <span class="ja-text inline-ja">今日{kyō}</span> which 
-        translates to today
-        (spelt out like <span class="ja-text inline-ja">きょう{kyō}</span>) uses this, by putting the 
-        <span class="ja-text inline-ja">き{ki}</span>
-        and <span class="ja-text inline-ja">よ{yo}</span> kanas together to
-        create <span class="ja-text inline-ja">きょ{kyo}</span>, note that
-        <span class="ja-text inline-ja">や{ya}</span>,
-        <span class="ja-text inline-ja">ゆ{yu}</span>, 
-        and 
-        <span class="ja-text inline-ja">よ{yo}</span> when used in <span class="ja-text inline-ja">拗音{ようおん}</span>
-        are made slightly smaller, like <span class="ja-text inline-ja">ゃ{ya}</span>,
-        <span class="ja-text inline-ja">ゅ{yu}</span>, 
-        and 
-        <span class="ja-text inline-ja">ょ{yo}</span>, (in Japanese these are known
-        as <span class="ja-text inline-ja">小さい仮名{ちいさいかな}</span>)when typing in 
-        Japanese using Rōmaji, you can make these small symbols by putting an "x"
-        before the Rōmaji, for example typing "xyo" will make "<span class="ja-text inline-ja">ょ{yo}</span>"
-        <br><br>
-        There are rare circumstances where diagraphs occur with a different pair of
-        kana which doesn't contain 
-        <span class="ja-text inline-ja">や{ya}</span>,
-        <span class="ja-text inline-ja">ゆ{yu}</span>, 
-        or, 
-        <span class="ja-text inline-ja">よ{yo}</span>, usaually in Katakana with loanwords,
-        for example, <span class="ja-text inline-ja">カフェ{kafe}</span> (meaning cafe) conatins
-        the diagraph <span class="ja-text inline-ja">フェ{fe}</span>, to make an easy rule for 
-        this, a diagraph is just the 2 kana sounds mixed together so 
-        <span class="ja-text inline-ja">フ{fu}</span> and 
-        <span class="ja-text inline-ja">エ{e}</span> makes 
-        <span class="ja-text inline-ja">フェ{fe}</span>, there are also
-        diagraphs such as <span class="ja-text inline-ja">くゎ{kwa}</span> or 
-        <span class="ja-text inline-ja">くゐ{kwi}</span> in hiragana and kana
-        in general like <span class="ja-text inline-ja">ゐ{wi}</span>/
-        <span class="ja-text inline-ja">ヰ{wi}</span> and 
-        <span class="ja-text inline-ja">ゑ{we}</span>/
-        <span class="ja-text inline-ja">ヱ{we}</span>
-        which aren't used in modern Japanese,
-        if you are intrested to learn more you can search up about the history of 
-        Japanese <br><br>
-        In Japanese, there are 2 main diacritics known as <span class="ja-text inline-ja">濁点{だくてん}</span>
-        and <span class="ja-text inline-ja">半濁点{はんだくてん}</span>, 
-        <span class="ja-text inline-ja">濁点{だくてん}</span> is know as a 
-        voicing mark and is the most used diacritic in Japanese, symbolised by 2 
-        dashes on the top-right of a kana, memorising diacritics in japanese is 
-        quite easy as they use the same kanas but change the sound of the constant
-        for example, when using <span class="ja-text inline-ja">濁点{だくてん}</span>, 
-        <span class="ja-text inline-ja">か{ka}</span> becomes <span class="ja-text inline-ja">が{ga}</span>,
-        <span class="ja-text inline-ja">さ{sa}</span> becomes <span class="ja-text inline-ja">ざ{za}</span>,
-        <span class="ja-text inline-ja">た{ta}</span> becomes <span class="ja-text inline-ja">だ{sa}</span>, and
-        <span class="ja-text inline-ja">は{ha}</span> becomes <span class="ja-text inline-ja">ば{ba}</span>. 
-        this is the same with all of the vowels and their kanas as well, meaning you don't
-        have to memorise new kanas, this is also in both Katakana and Hiragana.
-        The next diacritic is <span class="ja-text inline-ja">濁点{だくてん}</span>, 
-        <span class="ja-text inline-ja">濁点{だくてん}</span> is a semi-voicing diacritic symbolised
-        by a circle shape in the top-right of the kana, <span class="ja-text inline-ja">濁点{だくてん}</span>
-        also only appears in 1 set of kanas, which is turning h_ to p_, e.g. <span class="ja-text inline-ja">は{ha}</span> into 
-        <span class="ja-text inline-ja">ぱ{pa}</span>, this is also the same in both katakana
-        and with all the different vowels as well, similarly to the diagraphs there are also
-        kanas with diacritics that aren't used in modern Japanese such as か゚(nga), ら゚(la), わ゙(va), you can 
-        search up about the history of Japanese to find out more about them
-        <br><br>
-        Now with the 46 basic characters, also know as <span class="ja-text inline-ja">五十音{ごじゅうおん}</span>
-        (which means 50 sounds however not all 50 are used in modern Japanese), 
-        plus the diagraphics and the diacritics all in modern Japanese
-        Hiragana and Katakana each have a total of 104 sounds
+        and today now plays a vital part in the language，such as being
+        used in furigana (a helping aid for spelling out kanji，also a feature
+        of this app)，gramatical elements such as particles and verb endings，
+        and with words that are native to Japan such as <span class="ja-text inline-ja">こんにちは{konnichiwa}</span>．
     </p>
-    <h3 id="hiragana-title"><span class="ja-text">平仮名{ひらがな}</span>（ＨＩＲＡＧＡＮＡ）<button class="quiz-button" id="hiragana-quiz"></button></h3>
+    
+    <h4 id="hiragana-50-title"><span class="ja-text">五十音{ごじゅうおん}</span>（ＧＯＪＵＵＯＮ）</h4>
+    <button class="quiz-button" id="hiragana-quiz"></button>
     <div id="hiragana-contents">
         <table>
             <tr>
+                <th class="ja-text table-title"></th>
+                <th class="ja-text table-title">あ段{あだん}</th>
+                <th class="ja-text table-title">い段{いだん}</th>
+                <th class="ja-text table-title">う段{うだん}</th>
+                <th class="ja-text table-title">え段{えだん}</th>
+                <th class="ja-text table-title">お段{おだん}</th>
+            </tr>
+
+            <!-- あ行 -->
+            <tr>
+                <th class="ja-text table-title">あ行{あぎょう}</th>
                 <th class="ja-text">あ{a}</th>
-                <th class="ja-text">か{ka}</th>
-                <th class="ja-text">さ{sa}</th>
-                <th class="ja-text">た{ta}</th>
-                <th class="ja-text">な{na}</th>
-                <th class="ja-text">は{ha}</th>
-                <th class="ja-text">ま{ma}</th>
-                <th class="ja-text">や{ya}</th>
-                <th class="ja-text">ら{ra}</th>
-                <th class="ja-text">わ{wa}</th>
-                <th class="ja-text">ぱ{pa}</th>
-                <th class="ja-text">ば{ba}</th>
-                <th class="ja-text">だ{da}</th>
-                <th class="ja-text">ざ{za}</th>
-                <th class="ja-text">が{ga}</th>
-            </tr>
-            <tr>
                 <th class="ja-text">い{i}</th>
-                <th class="ja-text">き{ki}</th>
-                <th class="ja-text">し{shi}</th>
-                <th class="ja-text">ち{chi}</th>
-                <th class="ja-text">に{ni}</th>
-                <th class="ja-text">ひ{hi}</th>
-                <th class="ja-text">み{mi}</th>
-                <th></th>
-                <th class="ja-text">り{ri}</th>
-                <th></th>
-                <th class="ja-text">ぴ{pi}</th>
-                <th class="ja-text">び{bi}</th>
-                <th class="ja-text">ぢ{di}</th>
-                <th class="ja-text">じ{ji}</th>
-                <th class="ja-text">ぎ{gi}</th>
-            </tr>
-            <tr>
                 <th class="ja-text">う{u}</th>
-                <th class="ja-text">く{ku}</th>
-                <th class="ja-text">す{su}</th>
-                <th class="ja-text">つ{tsu}</th>
-                <th class="ja-text">ぬ{nu}</th>
-                <th class="ja-text">ふ{fu}</th>
-                <th class="ja-text">む{mu}</th>
-                <th class="ja-text">ゆ{yu}</th>
-                <th class="ja-text">る{ru}</th>
-                <th class="ja-text">を{wo}</th>
-                <th class="ja-text">ぷ{pu}</th>
-                <th class="ja-text">ぶ{bu}</th>
-                <th class="ja-text">づ{dzu}</th>
-                <th class="ja-text">ず{zu}</th>
-                <th class="ja-text">ぐ{gu}</th>
-            </tr>
-            <tr>
                 <th class="ja-text">え{e}</th>
-                <th class="ja-text">け{ke}</th>
-                <th class="ja-text">せ{se}</th>
-                <th class="ja-text">て{te}</th>
-                <th class="ja-text">ね{ne}</th>
-                <th class="ja-text">へ{he}</th>
-                <th class="ja-text">め{me}</th>
-                <th></th>
-                <th class="ja-text">れ{re}</th>
-                <th></th>
-                <th class="ja-text">ぺ{pe}</th>
-                <th class="ja-text">べ{be}</th>
-                <th class="ja-text">で{de}</th>
-                <th class="ja-text">ぜ{ze}</th>
-                <th class="ja-text">げ{ge}</th>
-            </tr>
-            <tr>
                 <th class="ja-text">お{o}</th>
+            </tr>
+
+            <!-- か行 -->
+            <tr>
+                <th class="ja-text table-title">か行{かぎょう}</th>
+                <th class="ja-text">か{ka}</th>
+                <th class="ja-text">き{ki}</th>
+                <th class="ja-text">く{ku}</th>
+                <th class="ja-text">け{ke}</th>
                 <th class="ja-text">こ{ko}</th>
+            </tr>
+
+            <!-- さ行 -->
+            <tr>
+                <th class="ja-text table-title">さ行{さぎょさ}</th>
+                <th class="ja-text">さ{sa}</th>
+                <th class="ja-text">し{shi}</th>
+                <th class="ja-text">す{su}</th>
+                <th class="ja-text">せ{se}</th>
                 <th class="ja-text">そ{so}</th>
+            </tr>
+
+            <!-- た行 -->
+            <tr>
+                <th class="ja-text table-title">た行{たぎょう}</th>
+                <th class="ja-text">た{ta}</th>
+                <th class="ja-text">ち{chi}</th>
+                <th class="ja-text">つ{tsu}</th>
+                <th class="ja-text">て{te}</th>
                 <th class="ja-text">と{to}</th>
+            </tr>
+
+            <!-- な行 -->
+            <tr>
+                <th class="ja-text table-title">な行{なぎょう}</th>
+                <th class="ja-text">な{na}</th>
+                <th class="ja-text">に{ni}</th>
+                <th class="ja-text">ぬ{nu}</th>
+                <th class="ja-text">ね{ne}</th>
                 <th class="ja-text">の{no}</th>
+            </tr>
+
+            <!-- は行 -->
+            <tr>
+                <th class="ja-text table-title">は行{はぎょう}</th>
+                <th class="ja-text">は{ha}</th>
+                <th class="ja-text">ひ{hi}</th>
+                <th class="ja-text">ふ{fu}</th>
+                <th class="ja-text">へ{he}</th>
                 <th class="ja-text">ほ{ho}</th>
+            </tr>
+
+            <!-- ま行 -->
+            <tr>
+                <th class="ja-text table-title">ま行{まぎょう}</th>
+                <th class="ja-text">ま{ma}</th>
+                <th class="ja-text">み{mi}</th>
+                <th class="ja-text">む{mu}</th>
+                <th class="ja-text">め{me}</th>
                 <th class="ja-text">も{mo}</th>
+            </tr>
+
+            <!-- や行 -->
+            <tr>
+                <th class="ja-text table-title">や行{やぎょう}</th>
+                <th class="ja-text">や{ya}</th>
+                <th class="ja-text"></th>
+                <th class="ja-text">ゆ{yu}</th>
+                <th class="ja-text"></th>
                 <th class="ja-text">よ{yo}</th>
+            </tr>
+
+            <!-- ら行 -->
+            <tr>
+                <th class="ja-text table-title">ら行{らぎょう}</th>
+                <th class="ja-text">ら{ra}</th>
+                <th class="ja-text">り{ri}</th>
+                <th class="ja-text">る{ru}</th>
+                <th class="ja-text">れ{re}</th>
                 <th class="ja-text">ろ{ro}</th>
+            </tr>
+
+            <!-- わ行 -->
+            <tr>
+                <th class="ja-text table-title">わ行{わぎょう}</th>
+                <th class="ja-text">わ{wa}</th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text">を{wo}</th>
+            </tr>
+
+            <!-- ん -->
+            <tr>
+                <th class="ja-text table-title">撥音{はつおん}</th>
                 <th class="ja-text">ん{n}</th>
-                <th class="ja-text">ぽ{po}</th>
-                <th class="ja-text">ぼ{bo}</th>
-                <th class="ja-text">ど{do}</th>
-                <th class="ja-text">ぞ{zo}</th>
-                <th class="ja-text">ご{go}</th>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th class="ja-text">きゃ{kya}</th>
-                <th class="ja-text">しゃ{sha}</th>
-                <th class="ja-text">ちゃ{cha}</th>
-                <th class="ja-text">にゃ{nya}</th>
-                <th class="ja-text">ひゃ{hya}</th>
-                <th class="ja-text">みゃ{mya}</th>
-                <th class="ja-text">りゃ{rya}</th>
-                <th class="ja-text">ぴゃ{pya}</th>
-                <th class="ja-text">びゃ{bya}</th>
-                <th class="ja-text">じゃ{ja}</th>
-                <th class="ja-text">ぎゃ{gya}</th>
-            </tr>
-            <tr>
-                <th class="ja-text">きゅ{kyu}</th>
-                <th class="ja-text">しゅ{shu}</th>
-                <th class="ja-text">ちゅ{chu}</th>
-                <th class="ja-text">にゅ{nyu}</th>
-                <th class="ja-text">ひゅ{hyu}</th>
-                <th class="ja-text">みゅ{myu}</th>
-                <th class="ja-text">りゅ{ryu}</th>
-                <th class="ja-text">ぴゅ{pyu}</th>
-                <th class="ja-text">びゅ{byu}</th>
-                <th class="ja-text">じゅ{ju}</th>
-                <th class="ja-text">ぎゅ{gyu}</th>
-            </tr>
-            <tr>
-                <th class="ja-text">きょ{kyo}</th>
-                <th class="ja-text">しょ{sho}</th>
-                <th class="ja-text">ちょ{cho}</th>
-                <th class="ja-text">にょ{nyo}</th>
-                <th class="ja-text">ひょ{hyo}</th>
-                <th class="ja-text">みょ{myo}</th>
-                <th class="ja-text">りょ{ryo}</th>
-                <th class="ja-text">ぴょ{pyo}</th>
-                <th class="ja-text">びょ{byo}</th>
-                <th class="ja-text">じょ{jo}</th>
-                <th class="ja-text">ぎょ{gyo}</th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
             </tr>
         </table>
     </div>
@@ -329,9 +249,128 @@
             </div>
         </div> 
     </div>
-    <h3 id="katakana-title"><span class="ja-text">片仮名{かたかな}</span>（ＫＡＴＡＫＡＮＡ）<button class="quiz-button" id="katakana-quiz"></button></h3>
+    <h4 id="hiragana-dakuten-handakuten-title"><span class="ja-text">濁点と{ごじゅうおん}</span>（５０　ＳＯＵＮＤＳ）</h4>
+    <button class="quiz-button" id="hiragana-quiz"></button>
+    <h3 id="hatsuon-title"><span class="ja-text">撥音{はつおん}</span>（ＨＡＴＳＵＯＮ）</h3>
+    <p class="descriptor">
+        In the <span class="ja-text inline-ja">五十音{ごじゅうおん}</span> table, you may see an extra kana row added called <span class="ja-text inline-ja">撥音{はつおん}</span>, although it isn't part of the original <span class="ja-text inline-ja">五十音{ごじゅうおん}</span> it is usually presented with them as it a part of basic the <span class="ja-text inline-ja">仮名{がな}</span> you will need to learn, the <span class="ja-text inline-ja">撥音{はつおん}</span> is a short and quick nasal sound, which historically came from hentaigana (old variant forms of 
+        <span class="ja-text inline-ja">仮名{がな}</span> which was removed during the 1900s) from <span class="ja-text inline-ja">仮名{がな}</span> like "mu" which was also used for the "n" sound as well, the <span class="ja-text inline-ja">撥音{はつおん}</span> is usaually an "n" sound (like it is displayed in the tables and in <span class="ja-text inline-ja">ローマ字{ローマじ}</span>) however there are a few situations where it can sound different, firstly it will make a normal "n" sound if it comes before alveolar consonants (t, d, s, z, n) <span class="ja-text inline-ja">撥音{はつおん}</span> makes a "m" sound if it comes before bilabial consonants (b, p, m) such as <span class="ja-text inline-ja">新聞{しんぶん}</span> which means newspaper, an "ng" sound if it comes before velar consonants (k, g) such as <span class="ja-text inline-ja">元気{げんき}</span> which means healthy or energetic, if it is before a vowel or 
+        <span class="ja-text inline-ja">や{ya}</span>, 
+        <span class="ja-text inline-ja">ゆ{yu}</span>, or
+        <span class="ja-text inline-ja">よ{yo}</span>, the vowel becomes slightly nasalised as well such as in <span class="ja-text inline-ja">簡易{かんい}</span> which means simple or easy.
+        <br><br>
+        Note that although it is nice to know the lingistics of the <span class="ja-text inline-ja">撥音{はつおん}</span>, you will probably pick up the correct pronounciations as you learn the words it is found in, so don't worry over trying to memorise all of the situations
+    </p>
+    <p class="descriptor">
+        Katakana is a character set made up of straight，angular lines each
+        of which total 46 basic characters (the same as hiragana)，Katakana
+        was developed during the Heian Era (794-1185 AD) as a phonetic guide
+        for Buddhist monks and scholars，and was develop from the radicals 
+        (indervidual symbols found within a kanji character) within 
+        <span class="ja-text inline-ja">万葉仮名{まんようがな}</span>
+        (ancient Chinese characters used in Japan)，which is where Katakana gets it's name 
+        as it translated to "fragmentary kana" as it is created from 
+        fragments of kanji characters． <br><br>
+        In modern Japanese，Katakana represents Foreign Loanwords (also known as 
+        <span class="ja-text inline-ja">外来語{がいらいご}</span>)，such as 
+        <span class="ja-text inline-ja">ビーチ{bīchi}</span> which means beach and 
+        <span class="ja-text inline-ja">ホテル{hoteru}</span> which means hotel．
+        Its good to note that even though these sound similar to English，not all
+        loanwords do，some can be shortened like in 
+        <span class="ja-text inline-ja">コンビニ{konbini}</span>
+        which means convenience store and some may not even be english such as 
+        <span class="ja-text inline-ja">パン{pan}</span> which comes from the 
+        Portuguese word "pão" for bread，Katakana is also used in Onomatopoeia such
+        as「<span class="ja-text inline-ja">ニャー{nyā}</span>」which is a cat's meow or
+        「<span class="ja-text inline-ja">ドキドキ{dokidoki}</span>」 
+        which is the sound of a heartbeat，as well as many other uses like
+        for technical or scientific terms．<br><br>
+        Beyond the basic 46 characters，Hiragana and Katakana can have diagraphs 
+        (a pair of characters which creates a single distinct sound) and 
+        diacritics (a glyph/shape added to a character to change it's sound)．<br><br>
+        the diagraphs used in modern Japanese are called 
+        <span class="ja-text inline-ja">拗音{ようおん}</span>，
+        and in modern japanese they normally take a <span class="ja-text inline-ja">仮名{かな}</span> ending with i (e.g．
+        <span class="ja-text inline-ja">き{ki}</span>，
+        <span class="ja-text inline-ja">し{shi}</span>，
+        <span class="ja-text inline-ja">ち{chi}</span>，
+        <span class="ja-text inline-ja">に{ni}</span>，
+        etc)
+        and add either <span class="ja-text inline-ja">や{ya}</span>，
+        <span class="ja-text inline-ja">ゆ{yu}</span>，
+        or 
+        <span class="ja-text inline-ja">よ{yo}</span>
+         to combind the 2 sounds together，for
+        example，the word <span class="ja-text inline-ja">今日{kyō}</span> which 
+        translates to today
+        (spelt out like <span class="ja-text inline-ja">きょう{kyō}</span>) uses this，by putting the 
+        <span class="ja-text inline-ja">き{ki}</span>
+        and <span class="ja-text inline-ja">よ{yo}</span> <span class="ja-text inline-ja">仮名{かな}</span> together to
+        create <span class="ja-text inline-ja">きょ{kyo}</span>，note that
+        <span class="ja-text inline-ja">や{ya}</span>，
+        <span class="ja-text inline-ja">ゆ{yu}</span>，
+        and 
+        <span class="ja-text inline-ja">よ{yo}</span> when used in <span class="ja-text inline-ja">拗音{ようおん}</span>
+        are made slightly smaller，like <span class="ja-text inline-ja">ゃ{ya}</span>，
+        <span class="ja-text inline-ja">ゅ{yu}</span>，
+        and 
+        <span class="ja-text inline-ja">ょ{yo}</span>，(in Japanese these are known
+        as <span class="ja-text inline-ja">小さい仮名{ちいさいかな}</span>)when typing in 
+        Japanese using Rōmaji，you can make these small symbols by putting an "x"
+        before the Rōmaji，for example typing "xyo" will make "<span class="ja-text inline-ja">ょ{yo}</span>"
+        <br><br>
+        There are rare circumstances where diagraphs occur with a different pair of
+        <span class="ja-text inline-ja">仮名{かな}</span> which doesn't contain 
+        <span class="ja-text inline-ja">や{ya}</span>，
+        <span class="ja-text inline-ja">ゆ{yu}</span>，
+        or，
+        <span class="ja-text inline-ja">よ{yo}</span>，usaually in Katakana with loanwords，
+        for example，<span class="ja-text inline-ja">カフェ{kafe}</span> (meaning cafe) conatins
+        the diagraph <span class="ja-text inline-ja">フェ{fe}</span>，to make an easy rule for 
+        this，a diagraph is just the 2 <span class="ja-text inline-ja">仮名{かな}</span> sounds mixed together so 
+        <span class="ja-text inline-ja">フ{fu}</span> and 
+        <span class="ja-text inline-ja">エ{e}</span> makes 
+        <span class="ja-text inline-ja">フェ{fe}</span>，there are also
+        diagraphs such as <span class="ja-text inline-ja">くゎ{kwa}</span> or 
+        <span class="ja-text inline-ja">くゐ{kwi}</span> in hiragana and kana
+        in general like <span class="ja-text inline-ja">ゐ{wi}</span>/
+        <span class="ja-text inline-ja">ヰ{wi}</span> and 
+        <span class="ja-text inline-ja">ゑ{we}</span>/
+        <span class="ja-text inline-ja">ヱ{we}</span>
+        which aren't used in modern Japanese，
+        if you are intrested to learn more you can search up about the history of 
+        Japanese <br><br>
+        In Japanese，there are 2 main diacritics known as <span class="ja-text inline-ja">濁点{だくてん}</span>
+        and <span class="ja-text inline-ja">半濁点{はんだくてん}</span>，
+        <span class="ja-text inline-ja">濁点{だくてん}</span> is know as a 
+        voicing mark and is the most used diacritic in Japanese，symbolised by 2 
+        dashes on the top-right of a kana，memorising diacritics in japanese is 
+        quite easy as they use the same <span class="ja-text inline-ja">仮名{かな}</span> but change the sound of the constant
+        for example，when using <span class="ja-text inline-ja">濁点{だくてん}</span>，
+        <span class="ja-text inline-ja">か{ka}</span> becomes <span class="ja-text inline-ja">が{ga}</span>，
+        <span class="ja-text inline-ja">さ{sa}</span> becomes <span class="ja-text inline-ja">ざ{za}</span>，
+        <span class="ja-text inline-ja">た{ta}</span> becomes <span class="ja-text inline-ja">だ{sa}</span>，and
+        <span class="ja-text inline-ja">は{ha}</span> becomes <span class="ja-text inline-ja">ば{ba}</span>． 
+        this is the same with all of the vowels and their <span class="ja-text inline-ja">仮名{かな}</span> as well，meaning you don't
+        have to memorise new kana，this is also in both Katakana and Hiragana．
+        The next diacritic is <span class="ja-text inline-ja">濁点{だくてん}</span>，
+        <span class="ja-text inline-ja">濁点{だくてん}</span> is a semi-voicing diacritic symbolised
+        by a circle shape in the top-right of the kana，<span class="ja-text inline-ja">濁点{だくてん}</span>
+        also only appears in 1 set of kana，which is turning h_ to p_，e.g． <span class="ja-text inline-ja">は{ha}</span> into 
+        <span class="ja-text inline-ja">ぱ{pa}</span>，this is also the same in both katakana
+        and with all the different vowels as well，similarly to the diagraphs there are also
+        <span class="ja-text inline-ja">仮名{かな}</span> with diacritics that aren't used in modern Japanese such as か゚(nga)，ら゚(la)，わ゙(va)，you can 
+        search up about the history of Japanese to find out more about them
+        <br><br>
+        Now with the 46 basic characters，also know as 
+        (which means 50 sounds however not all 50 are used in modern Japanese)，
+        plus the diagraphics and the diacritics all in modern Japanese
+        Hiragana and Katakana each have a total of 104 sounds
+    </p>
+    
+    <!-- <h3 id="katakana-title"><span class="ja-text">片仮名{かたかな}</span>（ＫＡＴＡＫＡＮＡ）<button class="quiz-button" id="katakana-quiz"></button></h3> -->
     <div id="katakana-contents">
-        <table>
+        <!-- <table>
             <tr>
                 <th class="ja-text">ア{a}</th>
                 <th class="ja-text">カ{ka}</th>
@@ -458,7 +497,7 @@
                 <th class="ja-text">ジョ{jo}</th>
                 <th class="ja-text">ギョ{gyo}</th>
             </tr>
-        </table>
+        </table> -->
     </div>
     <div id="katakana-quiz-contents" style="display: none;">
         <div class="quiz-container">
@@ -476,39 +515,33 @@
             </div>
         </div> 
     </div>
-    <h3 id="vowel-const-title">
-        <span class="ja-text">長音と促音{ちょうおん・と・そくおん}</span>（ＬＯＮＧ　ＶＯＷＥＬＳ　ＡＮＤ　ＤＯＵＢＬＥ　ＣＯＮＳＯＮＡＮＴＳ）
-    </h3>
-
+    <h3 id="vowel-title"><span class="ja-text">長音{ちょうおん}</span>（ＬＯＮＧ　ＶＯＷＥＬＳ）</h3>
     <p class="descriptor">
-        In Japanese, long vowels are know as <span class="ja-text inline-ja">長音{ちょうおん}</span>.
-        In Hiragana, the vowel sound can be extended by adding either an 
-        <span class="ja-text inline-ja">あ{a}</span>, 
-        <span class="ja-text inline-ja">い{i}</span>, 
-        or <span class="ja-text inline-ja">う{u}</span>, depending
+        In Japanese，long vowels are know as <span class="ja-text inline-ja">長音{ちょうおん}</span>．
+        In Hiragana，the vowel sound can be extended by adding a vowel (あ、い、う、え、お) to the end of a sound，
+        for example 
         on the vowel and it's constanent such as <span class="ja-text inline-ja">高校{こうこう}</span>
-        which means "high school".
+        which means "high school"．
         In Katakana these long vowels are 
-        indicated by "ー", for example in the word <span class="ja-text inline-ja">ラーメン{rāmen}</span>,
-        it is also good to note that kanas can be used in both Hiragana and
-        Katakana to express emotion or emphasis, for example えぇ？ (or えー？) 
-        means Eeh?
-        <br><br>
-        As well as having long vowels, in Japanese the constant sound can also be extended,
-        this is represeted by a 
+        indicated by "ー"，for example in the word <span class="ja-text inline-ja">ラーメン{rāmen}</span>，
+        it is also good to note that <span class="ja-text inline-ja">仮名{かな}</span> can be used in both Hiragana and
+        Katakana to express emotion or emphasis，for example えぇ？ (or えー？) which means Eeh? And when
+        reading words in Rōmaji，a long vowel sound is represented by a dash above the vowel
+        (know as a )
     </p>
+    <h3 id="const-title"><span class="ja-text">促音{そくおん}</span>（ＤＯＵＢＬＥ　ＣＯＮＳＯＮＡＮＴＳ）</h3>
     <h2 id="kanji-title"><span class="ja-text">漢字{かんじ}</span>（ＫＡＮＪＩ）</h2>
     <h2 id="vocab-title"><span class="ja-text">単語{たんご}</span>（ＶＯＣＡＢＵＬＡＲＹ）</h2>
     <h2 id="grammar-title"><span class="ja-text">文法{ぶんぽう}</span>（ＧＲＡＭＭＡＲ）</h2>
     <h3 id="particle-title"><span class="ja-text">助詞{じょし}</span>（ＰＡＲＴＩＣＬＥＳ）</h3>
     <p class="descriptor">
-        Particles are a key aspect of grammer in Japanese, they act as suffixes 
-        or short words that follow after a noun, verb, adjective or sentence, 
-        their range varies from indicating the function and meaning of words, to 
-        changing a sentence's tone and speaker affect.
+        Particles are a key aspect of grammer in Japanese，they act as suffixes 
+        or short words that follow after a noun，verb，adjective or sentence，
+        their range varies from indicating the function and meaning of words，to 
+        changing a sentence's tone and speaker affect．
     </p>
     <div class="particles-contents">
-        <div id="particle-container">
+        <div id="grid-container">
             <main>
                 <div class="particle-area">
                     <table>
@@ -654,6 +687,5 @@
         </div>
     </div>
     <h2 id="counter-title"><span class="ja-text">数詞{すうし}</span>（ＣＯＵＮＴＥＲＳ）</h2>
-</div>
 </body>
 </html>

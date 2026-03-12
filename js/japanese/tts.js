@@ -9,17 +9,20 @@ speechSynthesis.addEventListener("voiceschanged", () => {
 
 
 //update with new ja-screen elements
-waitForElemAll("ja-screen", 290).then(function(ja_screen){
-    // use for debugging
-    console.log(document.getElementsByClassName("ja-screen").length)
-    elems = ja_screen
+waitForElemAll(".ja-text", 202).then(function(ja_text){
     if(window.matchMedia("(pointer: coarse)").matches){
         var clicker = "dblclick"
     } else {
         var clicker = "click"
     }
-    for(i=0;i<elems.length;i++){
-        elems[i].addEventListener(clicker,function(event){
+    for(i=0;i<ja_text.length;i++){
+        if(ja_text[i].tagName != "TH"){
+            var ja_screen = ja_text[i].firstChild
+        } else {
+            var ja_screen = ja_text[i]
+        }
+        ja_screen.addEventListener(clicker,function(event){
+            console.log("works")
             if(window.localStorage.getItem("AUDIO") == "1"){
                 window.speechSynthesis.cancel()
                 if(event.srcElement.parentElement.id == "particle"){

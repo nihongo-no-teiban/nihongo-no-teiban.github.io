@@ -1,5 +1,7 @@
 //update with new ja-text elements
-waitForElemAll("ja-text", 290).then(function(elem){
+waitForElemAll(".ja-text", 202).then(function(elem){
+    // use for debugging
+    console.log(document.getElementsByClassName("ja-text").length)
     var JAelems = elem
     for (i=0;i<JAelems.length;i++) {
         var currentElem = JAelems[i]
@@ -10,13 +12,19 @@ waitForElemAll("ja-text", 290).then(function(elem){
                 currentElem.innerText = ""
                 var screenSpan = document.createElement("span")
                 var tableChecker = currentElem.parentElement.tagName
+                console.log(currentElem.className.includes("table-title"))
                 if(tableChecker == "TR" && currentList[j].length == 1 && currentElem.id != "particle"){
                     screenSpan.className = "ja-screen singleKana"
-                } else if(tableChecker == "TR" && currentList[j].length == 2 && currentElem.id != "particle"){
+                } else if(currentElem.className.includes("table-title") == false && 
+                tableChecker == "TR" && currentList[j].length == 2 && currentElem.id != "particle"){
                     screenSpan.className = "ja-screen doubleKana"
-                } else if(tableChecker == "TR" && currentList[j].length >= 2 && currentElem.id == "particle"){
+                } else if(currentElem.className.includes("table-title") && 
+                tableChecker == "TR" && currentList[j].length == 2 && currentElem.id != "particle"){
+                    screenSpan.className = "ja-screen doubleKana ja-table-title"
+                } else if(currentElem.className.includes("table-title") == false && 
+                tableChecker == "TR" && currentList[j].length >= 2 && currentElem.id == "particle"){
                     screenSpan.className = "ja-screen moreParticle"
-                } 
+                }
                 else {
                     screenSpan.className = "ja-screen"
                 }
