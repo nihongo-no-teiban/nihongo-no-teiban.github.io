@@ -9,7 +9,7 @@ speechSynthesis.addEventListener("voiceschanged", () => {
 
 
 //update with new ja-screen elements
-waitForElemAll(".ja-text", 202).then(function(ja_text){
+waitForElemAll(".ja-text", 310).then(function(ja_text){
     if(window.matchMedia("(pointer: coarse)").matches){
         var clicker = "dblclick"
     } else {

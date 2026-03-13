@@ -16,6 +16,22 @@
         background-repeat: no-repeat;
     }
 
+    #opening-screen{
+        height: calc(100lvh * 4);
+    }
+    #opening-center{
+        top: calc(50dvh * 4);
+        left: calc(50dvw * 4);
+    }
+    #main-heading .ja-popup{
+    top: calc(-0.5vw * 4);
+    font-size: calc(2vw * 4);
+}
+
+#main-heading .ja-screen:hover{
+    --text-shadow-value: calc(0.125vw * 4);
+}
+
     #side-menu-button{
         font-size: 100pt;
         padding: 25px;
@@ -29,7 +45,7 @@
     }
 
     #side-menu-text{
-        padding-bottom: 300vh;
+        padding-bottom: calc(100lvh * 4);
     }
 
     .menu-option{
@@ -46,15 +62,19 @@
         width:650px;
     }
     .type-function{
-        font-size: 2.5em;
+        font-size: 3em;
         padding-right: 60px;
     }
 
     .type1{
-        font-size: 3.0em;
+        font-size: 3.5em;
         padding-right: 60px;
     }
     .type2{
+        font-size: 2.2em;
+        padding-right: 60px;
+    }
+    .type3{
         font-size: 1.8em;
         padding-right: 60px;
     }
@@ -69,13 +89,90 @@
         padding-left: 5px;
     }
 
-    #opening-screen{
-        height: calc(100lvh * 4);
+    .main-info{
+        max-width: calc(40vw * 4);
     }
-    #opening-center{
-        top: calc(50dvh * 4);
-        left: calc(50dvw * 4);
+
+    h2{
+        font-size: 85pt;
     }
+
+    h3{
+        font-size: 40pt;
+    }
+    h4{
+        font-size: 30pt;
+    }
+    h2 .ja-popup{
+        top: -50px;
+        font-size: 40pt;
+        padding: 8px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    h3 .ja-popup{
+        top: -42px;
+        font-size: 25pt;
+        padding: 10px;
+    }
+    h4 .ja-popup{
+        top: -42px;
+        font-size: 20pt;
+        padding: 10px;
+    }
+    table .ja-popup{
+        top:-40px;
+        font-size: 22pt;
+        padding: 2px;
+        padding-top:8px;
+        padding-bottom: 8px;
+    }
+
+    .ja-table-title .ja-popup{
+        top:-40px;
+        padding: 8px;
+    }
+    .quiz-button{
+        font-size: 30pt;
+        padding: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom:15px;
+        margin-top:15px;
+        border: 4px var(--SECONDARY) solid;
+    }
+
+    .descriptor{
+        font-size: 25pt;
+        max-width: 2000px;
+    }
+
+    .inline-ja{
+        font-size: 25pt;
+        letter-spacing: 0px;
+    }
+    .inline-ja .ja-popup{
+        top:-55px;
+        font-size: 25pt;
+        padding: 12px;
+        font-weight: 600;
+        border: 4px var(--SECONDARY) solid;
+    }
+
+
+
+}
+
+    /* 
+    
+
+    
+
+    
+
+    
+
+    
 
     #main-heading{
         font-size: 30vw;
@@ -136,7 +233,7 @@
     }
 
     :not(main) .ja-screen.doubleKana{
-        /* width:00px; */
+        width:00px;
         line-height: 70px;
         font-size: 37pt;
     }
@@ -308,4 +405,4 @@
         font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     }
 
-}
+} */

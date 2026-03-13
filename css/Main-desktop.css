@@ -123,11 +123,17 @@ table .ja-screen{
 }
 
 table .ja-screen.singleKana{
-    margin-left: -3px;
+    font-size: 28pt;
     padding-left: 26px;
     padding-right: 26px;
 }
-table .ja-screen.doubleKana, .ja-screen.moreParticle{
+table .ja-screen.doubleKana{
+    font-size: 28pt;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.ja-screen.moreParticle{
     padding-left: 18px;
     padding-right: 18px;
 }
@@ -303,12 +309,12 @@ Side Menu Contents/Text
 .type1{
     font-size: 1.35em;
     padding-right:30px;
-    font-weight: 600;
+    font-weight:900;
 }
 .type2{
     font-size: 1em;
     padding-right:30px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .type3{
     font-size: 0.8em;
@@ -409,7 +415,6 @@ OPENING PAGE AREA
     left: 0;
     right: 0;
     margin: auto;
-    width: max-content;
     max-width: 80vw;
     word-break: keep-all;
     opacity: 0;
@@ -503,7 +508,7 @@ Table Elements
 
 table {
     border-collapse: separate;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     position: relative;
     left:50%;
     translate: -50%;
@@ -555,14 +560,13 @@ Hiragana and Katakana
     left: 50%;
     translate: -50%;
     font-size: 20pt;
-    top:6px;
-    right:6px;
     padding: 2px;
-    margin-bottom:15px;
     border: 1px var(--SECONDARY) solid ;
     border-radius: 2px;
     color: var(--SECONDARY);
     background-color: var(--PRIMARYalpha);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .quiz-button:hover{
     color: var(--PRIMARY);
@@ -586,14 +590,14 @@ Hiragana and Katakana
     position: relative;
     left:50%;
     translate: -50%;
-    height: 500px;
+    height: 600px;
     width: 80%;
     max-width: 1200px;
     background-color: var(--PRIMARYalpha);
     border: 1px var(--SECONDARY) solid;
     border-radius: 2px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .quiz-question-counter{
     margin-block-start: 0;
@@ -711,7 +715,7 @@ Particle Titles
     margin-top: 5px;
     margin-bottom: 18px;
     width: 90%;
-    max-width: 1500px;
+    max-width: 1250px;
     padding: 10px;
     background-color: var(--PRIMARYalpha);
     border: 6px var(--SECONDARY) double ;
@@ -729,7 +733,8 @@ Particle Contents
     position: relative;
     left: 50%;
     translate: -50%;
-    width: 80%;
+    width: 90%;
+    max-width: 1500px;
     display: grid;
     grid-template-columns: repeat(3, 33%);
     column-gap: 10px;

@@ -1,5 +1,5 @@
 //update with new ja-text elements
-waitForElemAll(".ja-text", 202).then(function(elem){
+waitForElemAll(".ja-text", 310).then(function(elem){
     // use for debugging
     console.log(document.getElementsByClassName("ja-text").length)
     var JAelems = elem
@@ -12,7 +12,6 @@ waitForElemAll(".ja-text", 202).then(function(elem){
                 currentElem.innerText = ""
                 var screenSpan = document.createElement("span")
                 var tableChecker = currentElem.parentElement.tagName
-                console.log(currentElem.className.includes("table-title"))
                 if(tableChecker == "TR" && currentList[j].length == 1 && currentElem.id != "particle"){
                     screenSpan.className = "ja-screen singleKana"
                 } else if(currentElem.className.includes("table-title") == false && 

@@ -69,12 +69,12 @@ async function createList(){
         ["","", 0],
         ["日本語の定番チートシート","window.scrollTo(0,0)", 1]
     ]
-    var alltitles = await waitForElem("#counter-title").then(response => response)
+    //this is to ensure all headings exist
+    await waitForElem("#counter-title").then(response => response)
     var firstHeading = await waitForElem("#kana-title").then(response => response)
     var titleList = []
     var currentElem = firstHeading
     var maxTitles = 100
-    console.log(currentElem.tagName)
     for(i=0;i<maxTitles;i++){
         try {
             if(currentElem.tagName == "H2" || currentElem.tagName == "H3"|| currentElem.tagName == "H4"){
