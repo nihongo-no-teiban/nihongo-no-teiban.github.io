@@ -8,8 +8,8 @@ speechSynthesis.addEventListener("voiceschanged", () => {
 
 
 
-//update with new ja-screen elements
-waitForElemAll(".ja-text", 310).then(function(ja_text){
+//update with new ja-text elements
+waitForElemAll(".ja-text", 460).then(function(ja_text){
     if(window.matchMedia("(pointer: coarse)").matches){
         var clicker = "dblclick"
     } else {
@@ -22,7 +22,6 @@ waitForElemAll(".ja-text", 310).then(function(ja_text){
             var ja_screen = ja_text[i]
         }
         ja_screen.addEventListener(clicker,function(event){
-            console.log("works")
             if(window.localStorage.getItem("AUDIO") == "1"){
                 window.speechSynthesis.cancel()
                 if(event.srcElement.parentElement.id == "particle"){

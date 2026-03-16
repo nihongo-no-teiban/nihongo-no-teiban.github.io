@@ -89,18 +89,15 @@ async function createList(){
     }
     for(i=0;i<titleList.length;i++){
         if(titleList[i].tagName == "H2") {
-            list.push([titleList[i].innerText,"scrollById(event,'"+titleList[i].id+"')",1])
+            list.push([titleList[i].innerText.replace(/\{.*?\}/g, ""),"scrollById(event,'"+titleList[i].id+"')",1])
         } else if(titleList[i].tagName == "H3"){
-            list.push([titleList[i].innerText,"scrollById(event,'"+titleList[i].id+"')",2])
+            list.push([titleList[i].innerText.replace(/\{.*?\}/g, ""),"scrollById(event,'"+titleList[i].id+"')",2])
         } else {
-            list.push([titleList[i].innerText,"scrollById(event,'"+titleList[i].id+"')",3])
+            list.push([titleList[i].innerText.replace(/\{.*?\}/g, ""),"scrollById(event,'"+titleList[i].id+"')",3])
         }
     }
     return list
 }
-
-
-//
 
 function addContents(array){
     waitForElem("#side-menu-text").then(function(container){
@@ -113,7 +110,9 @@ function addContents(array){
         }
     })
 }
+
 var sideMenuList = createList().then(response => 
     addContents(response)
 )
+
 

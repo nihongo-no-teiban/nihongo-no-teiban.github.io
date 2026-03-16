@@ -1,0 +1,120 @@
+<table>
+            <tr>
+                <th class="ja-text table-title"></th>
+                <th class="ja-text table-title">あ段{あだん}</th>
+                <th class="ja-text table-title">い段{いだん}</th>
+                <th class="ja-text table-title">う段{うだん}</th>
+                <th class="ja-text table-title">え段{えだん}</th>
+                <th class="ja-text table-title">お段{おだん}</th>
+            </tr>
+
+            <!-- あ行 -->
+            <tr>
+                <th class="ja-text table-title">あ行{あぎょう}</th>
+                <th class="ja-text">あ{a}</th>
+                <th class="ja-text">い{i}</th>
+                <th class="ja-text">う{u}</th>
+                <th class="ja-text">え{e}</th>
+                <th class="ja-text">お{o}</th>
+            </tr>
+
+            <!-- か行 -->
+            <tr>
+                <th class="ja-text table-title">か行{かぎょう}</th>
+                <th class="ja-text">か{ka}</th>
+                <th class="ja-text">き{ki}</th>
+                <th class="ja-text">く{ku}</th>
+                <th class="ja-text">け{ke}</th>
+                <th class="ja-text">こ{ko}</th>
+            </tr>
+
+            <!-- さ行 -->
+            <tr>
+                <th class="ja-text table-title">さ行{さぎょさ}</th>
+                <th class="ja-text">さ{sa}</th>
+                <th class="ja-text">し{shi}</th>
+                <th class="ja-text">す{su}</th>
+                <th class="ja-text">せ{se}</th>
+                <th class="ja-text">そ{so}</th>
+            </tr>
+
+            <!-- た行 -->
+            <tr>
+                <th class="ja-text table-title">た行{たぎょう}</th>
+                <th class="ja-text">た{ta}</th>
+                <th class="ja-text">ち{chi}</th>
+                <th class="ja-text">つ{tsu}</th>
+                <th class="ja-text">て{te}</th>
+                <th class="ja-text">と{to}</th>
+            </tr>
+
+            <!-- な行 -->
+            <tr>
+                <th class="ja-text table-title">な行{なぎょう}</th>
+                <th class="ja-text">な{na}</th>
+                <th class="ja-text">に{ni}</th>
+                <th class="ja-text">ぬ{nu}</th>
+                <th class="ja-text">ね{ne}</th>
+                <th class="ja-text">の{no}</th>
+            </tr>
+
+            <!-- は行 -->
+            <tr>
+                <th class="ja-text table-title">は行{はぎょう}</th>
+                <th class="ja-text">は{ha}</th>
+                <th class="ja-text">ひ{hi}</th>
+                <th class="ja-text">ふ{fu}</th>
+                <th class="ja-text">へ{he}</th>
+                <th class="ja-text">ほ{ho}</th>
+            </tr>
+
+            <!-- ま行 -->
+            <tr>
+                <th class="ja-text table-title">ま行{まぎょう}</th>
+                <th class="ja-text">ま{ma}</th>
+                <th class="ja-text">み{mi}</th>
+                <th class="ja-text">む{mu}</th>
+                <th class="ja-text">め{me}</th>
+                <th class="ja-text">も{mo}</th>
+            </tr>
+
+            <!-- や行 -->
+            <tr>
+                <th class="ja-text table-title">や行{やぎょう}</th>
+                <th class="ja-text">や{ya}</th>
+                <th class="ja-text"></th>
+                <th class="ja-text">ゆ{yu}</th>
+                <th class="ja-text"></th>
+                <th class="ja-text">よ{yo}</th>
+            </tr>
+
+            <!-- ら行 -->
+            <tr>
+                <th class="ja-text table-title">ら行{らぎょう}</th>
+                <th class="ja-text">ら{ra}</th>
+                <th class="ja-text">り{ri}</th>
+                <th class="ja-text">る{ru}</th>
+                <th class="ja-text">れ{re}</th>
+                <th class="ja-text">ろ{ro}</th>
+            </tr>
+
+            <!-- わ行 -->
+            <tr>
+                <th class="ja-text table-title">わ行{わぎょう}</th>
+                <th class="ja-text">わ{wa}</th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text">を{wo}</th>
+            </tr>
+
+            <!-- ん -->
+            <tr>
+                <th class="ja-text table-title">撥音{はつおん}</th>
+                <th class="ja-text">ん{n}</th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+                <th class="ja-text"></th>
+            </tr>
+        </table>

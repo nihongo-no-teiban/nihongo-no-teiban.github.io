@@ -109,6 +109,9 @@ JA-TEXT SETTINGS/OPTIONS
 h3 .ja-screen:hover {
     font-weight: 500;
 }
+h4 .ja-screen:hover {
+    font-weight: 500;
+}
 table .ja-screen{
     font-size: 25pt;
     width: auto;
@@ -309,7 +312,7 @@ Side Menu Contents/Text
 .type1{
     font-size: 1.35em;
     padding-right:30px;
-    font-weight:900;
+    font-weight:600;
 }
 .type2{
     font-size: 1em;
@@ -463,7 +466,7 @@ h2{
     left:50%;
     translate: -50%;
     font-size: 35pt;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--SECONDARY);
     margin-block-start: 0;
     margin-block-end: 0;
@@ -477,7 +480,7 @@ h3{
     left:50%;
     translate: -50%;
     font-size: 25pt;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--SECONDARY);
     margin-block-start: 0;
     margin-block-end: 0;
@@ -492,7 +495,7 @@ h4{
     left:50%;
     translate: -50%;
     font-size: 22pt;
-    font-weight: 200;
+    font-weight: 300;
     color: var(--SECONDARY);
     margin-block-start: 0;
     margin-block-end: 0;
@@ -596,8 +599,8 @@ Hiragana and Katakana
     background-color: var(--PRIMARYalpha);
     border: 1px var(--SECONDARY) solid;
     border-radius: 2px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .quiz-question-counter{
     margin-block-start: 0;

@@ -13,20 +13,17 @@ COLORS.includes(window.localStorage.getItem("PRIMARY")) == false || COLORS.inclu
 }
 
 function changeFavicon(dark){
-    var sizes = ["16","32","48"]
     if(dark){
         var darkText = "dark"
     } else {
         var darkText = ""
     }
-    //change with pereference
-    var currentsize = 0
-    try{document.getElementById("icon"+sizes[currentsize]).remove()}catch{}
+    try{document.getElementById("icon32").remove()}catch{}
     var current = document.createElement("link")
-    current.id = "icon"+ sizes[currentsize]
+    current.id = "icon32"
     current.rel = "icon"
     current.type = "image/x-icon"
-    current.href = "icons/icon"+ sizes[currentsize] + darkText + ".ico" + "?v=" + Date.now()
+    current.href = "icons/icon32" + darkText + ".ico" + "?v=" + Date.now()
     document.head.appendChild(current)
 }
 

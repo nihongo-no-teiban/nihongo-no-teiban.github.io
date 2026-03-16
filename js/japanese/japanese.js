@@ -1,5 +1,6 @@
 //update with new ja-text elements
-waitForElemAll(".ja-text", 310).then(function(elem){
+setTimeout(function(){
+waitForElemAll(".ja-text", 460).then(function(elem){
     // use for debugging
     console.log(document.getElementsByClassName("ja-text").length)
     var JAelems = elem
@@ -74,5 +75,4 @@ waitForElemAll(".ja-text", 310).then(function(elem){
         })
     }
 })
-
-         
+},100) //wait for elements to be created

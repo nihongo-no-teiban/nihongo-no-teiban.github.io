@@ -10,7 +10,6 @@ async function startQuiz(event){
     var permanentKana = Object.keys(content)
     var allKana = Object.keys(content)
     var allRomaji = Object.values(content)
-    console.log(allKana)
     var tableContent = await waitForElem("#"+type+"-contents").then(responce => responce)
     var quizContent = await waitForElem("#"+type+"-quiz-contents").then(responce => responce)
     tableContent.style.display = "none"
@@ -26,24 +25,23 @@ async function startQuiz(event){
         if(allKana.length == 0){
             setTimeout(quizComplete,100)
         } else{
-            console.log(allKana.length)
             questionCounter.innerText = (1+(permanentKana.length-allKana.length)) + "/" + permanentKana.length
             questionDisplay.style.display = "block"
             resultDisplay.style.display = "none"
             var currentIndex = Math.floor(Math.random()*allKana.length)
             var currentQuestion = allKana[currentIndex]
-            var currentAnswer = allRomaji[currentIndex]
+            var currentAnswer = allRomaji[currentIndex].replace(/[0-9]/,"")
             allKana.splice(currentIndex, 1)
             allRomaji.splice(currentIndex, 1)
             letterDisplay.innerText = currentQuestion
             inputBox.focus()
-            return currentAnswer
+            return [currentQuestion,currentAnswer]
         }
     }
-    var answer = setQuestion()
+    var currentInfo = setQuestion()
     function inputOptions(){
         if(inputBox.value != ""){
-            inputBox.value = inputBox.value.replace(/(\r\n|\n| |\r)/gm, "")
+            inputBox.value = inputBox.value.replace(/[^a-zA-Z]/g, "")
         }
     }
     inputBox.addEventListener("keyup",inputOptions)
@@ -51,7 +49,7 @@ async function startQuiz(event){
         if((event.type == "click" || event.key == "Enter") && inputBox.value != ""){
             var submittedAnswer = inputBox.value.toUpperCase()
             inputBox.value = ""
-            if(submittedAnswer == answer.toUpperCase()){
+            if(submittedAnswer == currentInfo[1].toUpperCase()){
                 result(true)
             } else {
                 result(false)
@@ -67,25 +65,36 @@ async function startQuiz(event){
         resultDisplay.style.display = "block"
         if(correctValue){
             correctCounter += 1
-            resultTitle.innerText = "correct"
-            resultInfo.innerText = "this is correct"
+            resultTitle.innerText = "CORRECT"
+            resultInfo.innerText = "頑張れ　(Keep it Up)　(^０^)ノ"
             setTimeout(function(){
-                answer = setQuestion()
+                currentInfo = setQuestion()
             },750)
         } else {
             
-            resultTitle.innerText = "incorrect"
-            resultInfo.innerText = "this is incorrect"
+            resultTitle.innerText = "INCORRECT"
+            resultInfo.innerText = "The correct Rōmaji for " + currentInfo[0] + ' is "' + currentInfo[1] + '"'
             setTimeout(function(){
-                answer = setQuestion()
-            },1500)
+                currentInfo = setQuestion()
+            },0)
         }
     }
     function quizComplete(){
         questionDisplay.style.display = "none"
         resultDisplay.style.display = "block"
-        resultTitle.innerText = "quiz complete"
-            resultInfo.innerText = "you scored " + correctCounter + " / " + permanentKana.length
+        resultTitle.innerText = "COMPLETE"
+        var percentage = (correctCounter/permanentKana.length)*100
+        var bonusText
+        if (percentage == 100) {
+            bonusText = "Perfect Score　ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧"
+        } else if (100 > percentage || percentage > 66){
+            bonusText = "Great Score　(•̀ᴗ•́ )و"
+        } else if (66 > percentage > 33){
+            bonusText = "Good Score　(˶ᵔ ᵕ ᵔ˶ )"
+        } else {
+            bonusText = "There's some work to be done　(ᴗ_ᴗ。)"
+        }
+        resultInfo.innerText = "Your Score: " + percentage + "% (" + correctCounter + "/" + permanentKana.length + ")\n\n" + bonusText
     }
 }
 
